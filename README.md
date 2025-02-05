@@ -1,5 +1,3 @@
-# Web3-Healthcare
-
 # Blockchain-Based Healthcare System: A Secure and Patient-Centric Approach to Medical Data Management
 
 ## Abstract
