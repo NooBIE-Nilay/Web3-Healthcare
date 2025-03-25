@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@types/multer": "^1.4.12",
-    "@types/node": "^22.13.13"
+    "@types/node": "^22.13.13",
+    "dotenv": "^16.4.7"
   }
 }
