@@ -23,7 +23,7 @@ model Patient {
   emergencyContact String
   phone            String
   email            String
-  allergies        String
+  allergies        String?
   age              Int?
   height           Float?
   weight           Float?
@@ -35,6 +35,7 @@ model Patient {
 
 model Doctor {
   id                 String           @id @default(uuid())
+  phone              String
   publicAdddress     String           @unique
   name               String
   qualifications     String[]
@@ -63,10 +64,10 @@ model Hospital {
 
 model MedicalRecord {
   id               String         @id @default(uuid())
-  recordTitle      String
-  recordHash       String
-  recordLink       String
-  recordDesc       String?
+  title            String
+  hash             String
+  link             String
+  description      String?
   medicalHistoryId String
   createdAt        DateTime       @default(now())
   updatedAt        DateTime       @updatedAt

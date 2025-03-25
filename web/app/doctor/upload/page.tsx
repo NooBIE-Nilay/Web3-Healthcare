@@ -10,9 +10,7 @@ const MedicalRecordUpload: React.FC = () => {
   const [patientDetails, setPatientDetails] = useState({
     patientName: "",
     patientId: "",
-    dateOfBirth: "",
-    diagnosis: "",
-    notes: "",
+    descrition: "",
   });
   const [uploadStatus, setUploadStatus] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -74,9 +72,7 @@ const MedicalRecordUpload: React.FC = () => {
       setPatientDetails({
         patientName: "",
         patientId: "",
-        dateOfBirth: "",
-        diagnosis: "",
-        notes: "",
+        descrition: "",
       });
       setUploadProgress(0);
     } catch (error) {
@@ -131,22 +127,6 @@ const MedicalRecordUpload: React.FC = () => {
                   required
                 />
               </div>
-              <div>
-                <label
-                  className="block text-gray-300 mb-2"
-                  htmlFor="dateOfBirth"
-                >
-                  Date of Birth
-                </label>
-                <input
-                  type="date"
-                  id="dateOfBirth"
-                  name="dateOfBirth"
-                  value={patientDetails.dateOfBirth}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                />
-              </div>
             </div>
           </div>
 
@@ -156,27 +136,13 @@ const MedicalRecordUpload: React.FC = () => {
             </h2>
 
             <div className="mb-4">
-              <label className="block text-gray-300 mb-2" htmlFor="diagnosis">
-                Diagnosis
-              </label>
-              <input
-                type="text"
-                id="diagnosis"
-                name="diagnosis"
-                value={patientDetails.diagnosis}
-                onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              />
-            </div>
-
-            <div className="mb-4">
               <label className="block text-gray-300 mb-2" htmlFor="notes">
-                Additional Notes
+                Description
               </label>
               <textarea
                 id="notes"
                 name="notes"
-                value={patientDetails.notes}
+                value={patientDetails.descrition}
                 onChange={handleInputChange}
                 rows={4}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
