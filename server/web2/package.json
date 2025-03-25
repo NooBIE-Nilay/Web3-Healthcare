@@ -11,8 +11,10 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "multer": "^1.4.5-lts.2"
   },
