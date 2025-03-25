@@ -1,0 +1,89 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Patient {
+  id               String           @id @default(uuid())
+  publicAddress    String           @unique
+  aadharNumber     String           @unique
+  name             String
+  gender           String
+  bloodGroup       String
+  emergencyContact String
+  phone            String
+  email            String
+  allergies        String
+  age              Int?
+  height           Float?
+  weight           Float?
+  contactAddress   String?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  MedicalHistory   MedicalHistory[]
+}
+
+model Doctor {
+  id                 String           @id @default(uuid())
+  publicAdddress     String           @unique
+  name               String
+  qualifications     String[]
+  specializations    String[]
+  registrationNumber String           @unique
+  isVerified         Boolean          @default(false)
+  verificationDate   DateTime
+  nextVerification   DateTime
+  hospitalId         String
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  hospital           Hospital         @relation(fields: [hospitalId], references: [id])
+  MedicalHistory     MedicalHistory[]
+}
+
+model Hospital {
+  id        String   @id @default(uuid())
+  name      String
+  address   String
+  phone     String
+  email     String
+  doctor    Doctor[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model MedicalRecord {
+  id               String         @id @default(uuid())
+  recordTitle      String
+  recordHash       String
+  recordLink       String
+  recordDesc       String?
+  medicalHistoryId String
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  medicalHistory   MedicalHistory @relation(fields: [medicalHistoryId], references: [id])
+}
+
+model MedicalHistory {
+  id              String          @id @default(uuid())
+  patientId       String
+  primaryDoctorId String
+  department      String
+  proirity        String          @default("2")
+  status          String
+  diagnosis       String
+  description     String?
+  treatment       String
+  medicalRecord   MedicalRecord[]
+  doctor          Doctor          @relation(fields: [primaryDoctorId], references: [id])
+  patient         Patient         @relation(fields: [patientId], references: [id])
+}
