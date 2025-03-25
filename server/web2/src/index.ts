@@ -8,15 +8,17 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ msg: "Server is Online" });
+  res.json({ msg: "Ser ver is Online" });
 });
 
 app.get("/login", (req, res) => {
   //TODO: Login Logic
+  //requires OTP for verification
 });
 
 app.get("/signup", (req, res) => {
   //TODO: Signup Logic
+  //requires Aadhar for verification and links userId with public Address
 });
 
 app.get("/requestAccess", (req, res) => {
