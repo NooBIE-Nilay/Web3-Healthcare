@@ -1,12 +1,28 @@
 import multer from "multer";
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "./temp/uploads/");
+    if (!file) {
+      return cb(new Error("No file provided"), "");
+    }
+    cb(null, "./public/temp/");
   },
   filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    console.log(file);
-    cb(null, file.fieldname + "-" + uniqueSuffix);
+    if (!file) {
+      return cb(new Error("No file provided"), "");
+    }
+    cb(null, file.originalname);
   },
 });
-export const upload = multer({ storage });
+
+export const upload = multer({
+  storage,
+  limits: {
+    fileSize: 1024 * 1024 * 5, // Limit file size to 5MB
+  },
+  fileFilter: function (req, file, cb) {
+    if (!file) {
+      return cb(new Error("No file provided"));
+    }
+    cb(null, true);
+  },
+});
