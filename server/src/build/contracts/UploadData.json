@@ -72,9 +72,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_healthRecordsStorage\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_rolesStorage\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"patient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"uploader\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"enum HealthRecordsStorage.DataType\",\"name\":\"dataType\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"DataUploaded\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"patient\",\"type\":\"address\"},{\"internalType\":\"enum HealthRecordsStorage.DataType\",\"name\":\"dataType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"uploadPatientData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/UploadData.sol\":\"UploadData\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/HealthRecordsStorage.sol\":{\"keccak256\":\"0xad2f5108a287dc92d5e348cf4b2470dfc96b3d7ca2bd999524d20fc8963bb61e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7f1165decfbc3e2fa05990f4d3c2660ede46fcf0e0a3ef2b747aae8a974beba9\",\"dweb:/ipfs/QmeRaeZPpCsRhSe58Z2m4dH2AJHhiN7UNcpw7iWkDaF7Zq\"]},\"project:/contracts/RolesStorage.sol\":{\"keccak256\":\"0xad4f26c4a1e622b4b2aa380dd23f415705232151b23fcc9760f43976823b40ff\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://525544b2690efec85ef60f08fceea37661e0ca7555e199b54665240871b3618c\",\"dweb:/ipfs/QmaeH9wyBgkn4kvPLmbsW88GxmaVUmiUSKDNb3b8NyzCbf\"]},\"project:/contracts/UploadData.sol\":{\"keccak256\":\"0xd425461bcfd9312f5b16a3a52770234a10b2cb012844976ad82a5e85cfec21d4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0675fa9ab19a90f615b3325eb0145755dd2732b256d2a7a1012cb38421a3d18\",\"dweb:/ipfs/QmT5jT56BgjtUUs15dhvrc6HMxWqVQMJs6Y7ZubLGawSZy\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516109cf3803806109cf833981810160405281019061003291906100cf565b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610154565b6000815190506100c98161013d565b92915050565b600080604083850312156100e257600080fd5b60006100f0858286016100ba565b9250506020610101858286016100ba565b9150509250929050565b60006101168261011d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6101468161010b565b811461015157600080fd5b50565b61086c806101636000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80639f66aaa314610030575b600080fd5b61004a60048036038101906100459190610470565b61004c565b005b60006002811115610086577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b81526004016100e191906105bd565b60206040518083038186803b1580156100f957600080fd5b505afa15801561010d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013191906104d7565b6002811115610169577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b148061028f5750600160028111156101aa577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b815260040161020591906105bd565b60206040518083038186803b15801561021d57600080fd5b505afa158015610231573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061025591906104d7565b600281111561028d577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b145b6102ce576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102c590610646565b60405180910390fd5b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16637fcfef948484846040518463ffffffff1660e01b815260040161032b939291906105d8565b600060405180830381600087803b15801561034557600080fd5b505af1158015610359573d6000803e3d6000fd5b505050503373ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fe971bc8099ace9de100689c391dd96f406c2fb336ded8648bbce370cba316b5784846040516103bc929190610616565b60405180910390a3505050565b60006103dc6103d784610697565b610666565b9050828152602081018484840111156103f457600080fd5b6103ff84828561073a565b509392505050565b600081359050610416816107ff565b92915050565b60008135905061042b81610816565b92915050565b60008151905061044081610826565b92915050565b600082601f83011261045757600080fd5b81356104678482602086016103c9565b91505092915050565b60008060006060848603121561048557600080fd5b600061049386828701610407565b93505060206104a48682870161041c565b925050604084013567ffffffffffffffff8111156104c157600080fd5b6104cd86828701610446565b9150509250925092565b6000602082840312156104e957600080fd5b60006104f784828501610431565b91505092915050565b610509816106e3565b82525050565b61051881610728565b82525050565b6000610529826106c7565b61053381856106d2565b9350610543818560208601610749565b61054c816107da565b840191505092915050565b60006105646026836106d2565b91507f4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f6160008301527f64206461746100000000000000000000000000000000000000000000000000006020830152604082019050919050565b60006020820190506105d26000830184610500565b92915050565b60006060820190506105ed6000830186610500565b6105fa602083018561050f565b818103604083015261060c818461051e565b9050949350505050565b600060408201905061062b600083018561050f565b818103602083015261063d818461051e565b90509392505050565b6000602082019050818103600083015261065f81610557565b9050919050565b6000604051905081810181811067ffffffffffffffff8211171561068d5761068c6107ab565b5b8060405250919050565b600067ffffffffffffffff8211156106b2576106b16107ab565b5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006106ee82610708565b9050919050565b6000819050610703826107eb565b919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610733826106f5565b9050919050565b82818337600083830152505050565b60005b8381101561076757808201518184015260208101905061074c565b83811115610776576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000601f19601f8301169050919050565b600481106107fc576107fb61077c565b5b50565b610808816106e3565b811461081357600080fd5b50565b6004811061082357600080fd5b50565b6003811061083357600080fd5b5056fea26469706673582212209bf6bdfe595cc90fc13d7ba27f06061f72d07e6b7a3660823788fc9ba2a14dd564736f6c63430008000033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80639f66aaa314610030575b600080fd5b61004a60048036038101906100459190610470565b61004c565b005b60006002811115610086577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b81526004016100e191906105bd565b60206040518083038186803b1580156100f957600080fd5b505afa15801561010d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013191906104d7565b6002811115610169577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b148061028f5750600160028111156101aa577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b815260040161020591906105bd565b60206040518083038186803b15801561021d57600080fd5b505afa158015610231573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061025591906104d7565b600281111561028d577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b145b6102ce576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102c590610646565b60405180910390fd5b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16637fcfef948484846040518463ffffffff1660e01b815260040161032b939291906105d8565b600060405180830381600087803b15801561034557600080fd5b505af1158015610359573d6000803e3d6000fd5b505050503373ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fe971bc8099ace9de100689c391dd96f406c2fb336ded8648bbce370cba316b5784846040516103bc929190610616565b60405180910390a3505050565b60006103dc6103d784610697565b610666565b9050828152602081018484840111156103f457600080fd5b6103ff84828561073a565b509392505050565b600081359050610416816107ff565b92915050565b60008135905061042b81610816565b92915050565b60008151905061044081610826565b92915050565b600082601f83011261045757600080fd5b81356104678482602086016103c9565b91505092915050565b60008060006060848603121561048557600080fd5b600061049386828701610407565b93505060206104a48682870161041c565b925050604084013567ffffffffffffffff8111156104c157600080fd5b6104cd86828701610446565b9150509250925092565b6000602082840312156104e957600080fd5b60006104f784828501610431565b91505092915050565b610509816106e3565b82525050565b61051881610728565b82525050565b6000610529826106c7565b61053381856106d2565b9350610543818560208601610749565b61054c816107da565b840191505092915050565b60006105646026836106d2565b91507f4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f6160008301527f64206461746100000000000000000000000000000000000000000000000000006020830152604082019050919050565b60006020820190506105d26000830184610500565b92915050565b60006060820190506105ed6000830186610500565b6105fa602083018561050f565b818103604083015261060c818461051e565b9050949350505050565b600060408201905061062b600083018561050f565b818103602083015261063d818461051e565b90509392505050565b6000602082019050818103600083015261065f81610557565b9050919050565b6000604051905081810181811067ffffffffffffffff8211171561068d5761068c6107ab565b5b8060405250919050565b600067ffffffffffffffff8211156106b2576106b16107ab565b5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006106ee82610708565b9050919050565b6000819050610703826107eb565b919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610733826106f5565b9050919050565b82818337600083830152505050565b60005b8381101561076757808201518184015260208101905061074c565b83811115610776576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000601f19601f8301169050919050565b600481106107fc576107fb61077c565b5b50565b610808816106e3565b811461081357600080fd5b50565b6004811061082357600080fd5b50565b6003811061083357600080fd5b5056fea26469706673582212209bf6bdfe595cc90fc13d7ba27f06061f72d07e6b7a3660823788fc9ba2a14dd564736f6c63430008000033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_healthRecordsStorage\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_rolesStorage\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"patient\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"uploader\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"enum HealthRecordsStorage.DataType\",\"name\":\"dataType\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"DataUploaded\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"patient\",\"type\":\"address\"},{\"internalType\":\"enum HealthRecordsStorage.DataType\",\"name\":\"dataType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"uploadPatientData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/UploadData.sol\":\"UploadData\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/HealthRecordsStorage.sol\":{\"keccak256\":\"0xad2f5108a287dc92d5e348cf4b2470dfc96b3d7ca2bd999524d20fc8963bb61e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7f1165decfbc3e2fa05990f4d3c2660ede46fcf0e0a3ef2b747aae8a974beba9\",\"dweb:/ipfs/QmeRaeZPpCsRhSe58Z2m4dH2AJHhiN7UNcpw7iWkDaF7Zq\"]},\"project:/contracts/RolesStorage.sol\":{\"keccak256\":\"0x236f8260da23098343ceeef8ca83b7309a619db2664ca83261f0ed424d24d978\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9f0d4ec2f01858e26508f2e01bbbefa37a20aa78f7e843ee1043010ca553cd7c\",\"dweb:/ipfs/QmTQ5V6upqbWzVddheQ2oVuRTEfXFE3rzrqrZqw5iHZoJM\"]},\"project:/contracts/UploadData.sol\":{\"keccak256\":\"0xd425461bcfd9312f5b16a3a52770234a10b2cb012844976ad82a5e85cfec21d4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0675fa9ab19a90f615b3325eb0145755dd2732b256d2a7a1012cb38421a3d18\",\"dweb:/ipfs/QmT5jT56BgjtUUs15dhvrc6HMxWqVQMJs6Y7ZubLGawSZy\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516109cf3803806109cf833981810160405281019061003291906100cf565b816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610154565b6000815190506100c98161013d565b92915050565b600080604083850312156100e257600080fd5b60006100f0858286016100ba565b9250506020610101858286016100ba565b9150509250929050565b60006101168261011d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6101468161010b565b811461015157600080fd5b50565b61086c806101636000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80639f66aaa314610030575b600080fd5b61004a60048036038101906100459190610470565b61004c565b005b60016003811115610086577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b81526004016100e191906105bd565b60206040518083038186803b1580156100f957600080fd5b505afa15801561010d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013191906104d7565b6003811115610169577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b148061028f5750600260038111156101aa577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b815260040161020591906105bd565b60206040518083038186803b15801561021d57600080fd5b505afa158015610231573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061025591906104d7565b600381111561028d577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b145b6102ce576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102c590610646565b60405180910390fd5b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16637fcfef948484846040518463ffffffff1660e01b815260040161032b939291906105d8565b600060405180830381600087803b15801561034557600080fd5b505af1158015610359573d6000803e3d6000fd5b505050503373ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fe971bc8099ace9de100689c391dd96f406c2fb336ded8648bbce370cba316b5784846040516103bc929190610616565b60405180910390a3505050565b60006103dc6103d784610697565b610666565b9050828152602081018484840111156103f457600080fd5b6103ff84828561073a565b509392505050565b600081359050610416816107ff565b92915050565b60008135905061042b81610816565b92915050565b60008151905061044081610826565b92915050565b600082601f83011261045757600080fd5b81356104678482602086016103c9565b91505092915050565b60008060006060848603121561048557600080fd5b600061049386828701610407565b93505060206104a48682870161041c565b925050604084013567ffffffffffffffff8111156104c157600080fd5b6104cd86828701610446565b9150509250925092565b6000602082840312156104e957600080fd5b60006104f784828501610431565b91505092915050565b610509816106e3565b82525050565b61051881610728565b82525050565b6000610529826106c7565b61053381856106d2565b9350610543818560208601610749565b61054c816107da565b840191505092915050565b60006105646026836106d2565b91507f4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f6160008301527f64206461746100000000000000000000000000000000000000000000000000006020830152604082019050919050565b60006020820190506105d26000830184610500565b92915050565b60006060820190506105ed6000830186610500565b6105fa602083018561050f565b818103604083015261060c818461051e565b9050949350505050565b600060408201905061062b600083018561050f565b818103602083015261063d818461051e565b90509392505050565b6000602082019050818103600083015261065f81610557565b9050919050565b6000604051905081810181811067ffffffffffffffff8211171561068d5761068c6107ab565b5b8060405250919050565b600067ffffffffffffffff8211156106b2576106b16107ab565b5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006106ee82610708565b9050919050565b6000819050610703826107eb565b919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610733826106f5565b9050919050565b82818337600083830152505050565b60005b8381101561076757808201518184015260208101905061074c565b83811115610776576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000601f19601f8301169050919050565b600481106107fc576107fb61077c565b5b50565b610808816106e3565b811461081357600080fd5b50565b6004811061082357600080fd5b50565b6004811061083357600080fd5b5056fea2646970667358221220dd0e3be3821ab2e1e536b3d31d673dc601567ae0f543e899a0cbe9a5f1e80e5464736f6c63430008000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80639f66aaa314610030575b600080fd5b61004a60048036038101906100459190610470565b61004c565b005b60016003811115610086577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b81526004016100e191906105bd565b60206040518083038186803b1580156100f957600080fd5b505afa15801561010d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013191906104d7565b6003811115610169577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b148061028f5750600260038111156101aa577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166344276733336040518263ffffffff1660e01b815260040161020591906105bd565b60206040518083038186803b15801561021d57600080fd5b505afa158015610231573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061025591906104d7565b600381111561028d577f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b145b6102ce576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102c590610646565b60405180910390fd5b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16637fcfef948484846040518463ffffffff1660e01b815260040161032b939291906105d8565b600060405180830381600087803b15801561034557600080fd5b505af1158015610359573d6000803e3d6000fd5b505050503373ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167fe971bc8099ace9de100689c391dd96f406c2fb336ded8648bbce370cba316b5784846040516103bc929190610616565b60405180910390a3505050565b60006103dc6103d784610697565b610666565b9050828152602081018484840111156103f457600080fd5b6103ff84828561073a565b509392505050565b600081359050610416816107ff565b92915050565b60008135905061042b81610816565b92915050565b60008151905061044081610826565b92915050565b600082601f83011261045757600080fd5b81356104678482602086016103c9565b91505092915050565b60008060006060848603121561048557600080fd5b600061049386828701610407565b93505060206104a48682870161041c565b925050604084013567ffffffffffffffff8111156104c157600080fd5b6104cd86828701610446565b9150509250925092565b6000602082840312156104e957600080fd5b60006104f784828501610431565b91505092915050565b610509816106e3565b82525050565b61051881610728565b82525050565b6000610529826106c7565b61053381856106d2565b9350610543818560208601610749565b61054c816107da565b840191505092915050565b60006105646026836106d2565b91507f4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f6160008301527f64206461746100000000000000000000000000000000000000000000000000006020830152604082019050919050565b60006020820190506105d26000830184610500565b92915050565b60006060820190506105ed6000830186610500565b6105fa602083018561050f565b818103604083015261060c818461051e565b9050949350505050565b600060408201905061062b600083018561050f565b818103602083015261063d818461051e565b90509392505050565b6000602082019050818103600083015261065f81610557565b9050919050565b6000604051905081810181811067ffffffffffffffff8211171561068d5761068c6107ab565b5b8060405250919050565b600067ffffffffffffffff8211156106b2576106b16107ab565b5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006106ee82610708565b9050919050565b6000819050610703826107eb565b919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610733826106f5565b9050919050565b82818337600083830152505050565b60005b8381101561076757808201518184015260208101905061074c565b83811115610776576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000601f19601f8301169050919050565b600481106107fc576107fb61077c565b5b50565b610808816106e3565b811461081357600080fd5b50565b6004811061082357600080fd5b50565b6004811061083357600080fd5b5056fea2646970667358221220dd0e3be3821ab2e1e536b3d31d673dc601567ae0f543e899a0cbe9a5f1e80e5464736f6c63430008000033",
   "immutableReferences": {},
   "generatedSources": [
     {
@@ -1100,7 +1100,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_Role_$376",
+                      "name": "validator_revert_t_enum$_Role_$377",
                       "nodeType": "YulIdentifier",
                       "src": "783:34:5"
                     },
@@ -1112,7 +1112,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_Role_$376_fromMemory",
+            "name": "abi_decode_t_enum$_Role_$377_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1913,7 +1913,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_Role_$376_fromMemory",
+                          "name": "abi_decode_t_enum$_Role_$377_fromMemory",
                           "nodeType": "YulIdentifier",
                           "src": "2035:39:5"
                         },
@@ -1932,7 +1932,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_enum$_Role_$376_fromMemory",
+            "name": "abi_decode_tuple_t_enum$_Role_$377_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4896,7 +4896,7 @@
                             "nodeType": "YulLiteral",
                             "src": "7643:1:5",
                             "type": "",
-                            "value": "3"
+                            "value": "4"
                           }
                         ],
                         "functionName": {
@@ -4921,7 +4921,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_Role_$376",
+            "name": "validator_revert_t_enum$_Role_$377",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4935,7 +4935,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_DataType_$161(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_DataType_$161(value)\n    }\n\n    function abi_decode_t_enum$_Role_$376_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$376(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_DataType_$161t_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_DataType_$161(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 64))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value2 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$376_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$376_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$161_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n\n        mstore(add(pos, 0), \"Only doctors or admins can uploa\")\n\n        mstore(add(pos, 32), \"d data\")\n\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_DataType_$161_t_string_memory_ptr__to_t_address_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n    }\n\n    function abi_encode_tuple_t_enum$_DataType_$161_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_DataType_$161(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_DataType_$161(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_DataType_$161_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_DataType_$161(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_DataType_$161(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_DataType_$161(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$376(value) {\n        if iszero(lt(value, 3)) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_DataType_$161(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_DataType_$161(value)\n    }\n\n    function abi_decode_t_enum$_Role_$377_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$377(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_DataType_$161t_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_DataType_$161(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 64))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value2 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$377_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$377_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$161_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n\n        mstore(add(pos, 0), \"Only doctors or admins can uploa\")\n\n        mstore(add(pos, 32), \"d data\")\n\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_DataType_$161_t_string_memory_ptr__to_t_address_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n    }\n\n    function abi_encode_tuple_t_enum$_DataType_$161_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_enum$_DataType_$161_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_DataType_$161(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_DataType_$161(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_DataType_$161_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_DataType_$161(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_DataType_$161(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_DataType_$161(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$377(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n}\n",
       "id": 5,
       "language": "Yul",
       "name": "#utility.yul"
@@ -4944,7 +4944,7 @@
   "sourceMap": "130:1132:4:-:0;;;729:204;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;850:21;806:20;;:66;;;;;;;;;;;;;;;;;;911:13;883:12;;:42;;;;;;;;;;;;;;;;;;729:204;;130:1132;;7:143:5;;95:6;89:13;80:22;;111:33;138:5;111:33;:::i;:::-;70:80;;;;:::o;156:440::-;;;292:2;280:9;271:7;267:23;263:32;260:2;;;308:1;305;298:12;260:2;351:1;376:64;432:7;423:6;412:9;408:22;376:64;:::i;:::-;366:74;;322:128;489:2;515:64;571:7;562:6;551:9;547:22;515:64;:::i;:::-;505:74;;460:129;250:346;;;;;:::o;602:96::-;;668:24;686:5;668:24;:::i;:::-;657:35;;647:51;;;:::o;704:126::-;;781:42;774:5;770:54;759:65;;749:81;;;:::o;836:122::-;909:24;927:5;909:24;:::i;:::-;902:5;899:35;889:2;;948:1;945;938:12;889:2;879:79;:::o;130:1132:4:-;;;;;;;",
   "deployedSourceMap": "130:1132:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;941:318;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;531:24;495:60;;;;;;;;;;;;;;;;:12;;;;;;;;;;;:20;;;516:10;495:32;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:60;;;;;;;;;;;;;;;;;:140;;;;612:23;576:59;;;;;;;;;;;;;;;;:12;;;;;;;;;;;:20;;;597:10;576:32;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:59;;;;;;;;;;;;;;;;;495:140;473:228;;;;;;;;;;;;:::i;:::-;;;;;;;;;1121:20:::1;::::0;::::1;;;;;;;;:32;;;1154:7;1163:8;1173;1121:61;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;;;;;1220:10;1198:53;;1211:7;1198:53;;;1232:8;1242;1198:53;;;;;;;:::i;:::-;;;;;;;;941:318:::0;;;:::o;7:344:5:-;;110:65;125:49;167:6;125:49;:::i;:::-;110:65;:::i;:::-;101:74;;198:6;191:5;184:21;236:4;229:5;225:16;274:3;265:6;260:3;256:16;253:25;250:2;;;291:1;288;281:12;250:2;304:41;338:6;333:3;328;304:41;:::i;:::-;91:260;;;;;;:::o;357:139::-;;441:6;428:20;419:29;;457:33;484:5;457:33;:::i;:::-;409:87;;;;:::o;502:163::-;;598:6;585:20;576:29;;614:45;653:5;614:45;:::i;:::-;566:99;;;;:::o;671:159::-;;767:6;761:13;752:22;;783:41;818:5;783:41;:::i;:::-;742:88;;;;:::o;850:273::-;;955:3;948:4;940:6;936:17;932:27;922:2;;973:1;970;963:12;922:2;1013:6;1000:20;1038:79;1113:3;1105:6;1098:4;1090:6;1086:17;1038:79;:::i;:::-;1029:88;;912:211;;;;;:::o;1129:689::-;;;;1293:2;1281:9;1272:7;1268:23;1264:32;1261:2;;;1309:1;1306;1299:12;1261:2;1352:1;1377:53;1422:7;1413:6;1402:9;1398:22;1377:53;:::i;:::-;1367:63;;1323:117;1479:2;1505:65;1562:7;1553:6;1542:9;1538:22;1505:65;:::i;:::-;1495:75;;1450:130;1647:2;1636:9;1632:18;1619:32;1678:18;1670:6;1667:30;1664:2;;;1710:1;1707;1700:12;1664:2;1738:63;1793:7;1784:6;1773:9;1769:22;1738:63;:::i;:::-;1728:73;;1590:221;1251:567;;;;;:::o;1824:300::-;;1951:2;1939:9;1930:7;1926:23;1922:32;1919:2;;;1967:1;1964;1957:12;1919:2;2010:1;2035:72;2099:7;2090:6;2079:9;2075:22;2035:72;:::i;:::-;2025:82;;1981:136;1909:215;;;;:::o;2130:118::-;2217:24;2235:5;2217:24;:::i;:::-;2212:3;2205:37;2195:53;;:::o;2254:151::-;2351:47;2392:5;2351:47;:::i;:::-;2346:3;2339:60;2329:76;;:::o;2411:364::-;;2527:39;2560:5;2527:39;:::i;:::-;2582:71;2646:6;2641:3;2582:71;:::i;:::-;2575:78;;2662:52;2707:6;2702:3;2695:4;2688:5;2684:16;2662:52;:::i;:::-;2739:29;2761:6;2739:29;:::i;:::-;2734:3;2730:39;2723:46;;2503:272;;;;;:::o;2781:370::-;;2944:67;3008:2;3003:3;2944:67;:::i;:::-;2937:74;;3041:34;3037:1;3032:3;3028:11;3021:55;3107:8;3102:2;3097:3;3093:12;3086:30;3142:2;3137:3;3133:12;3126:19;;2927:224;;;:::o;3157:222::-;;3288:2;3277:9;3273:18;3265:26;;3301:71;3369:1;3358:9;3354:17;3345:6;3301:71;:::i;:::-;3255:124;;;;:::o;3385:553::-;;3602:2;3591:9;3587:18;3579:26;;3615:71;3683:1;3672:9;3668:17;3659:6;3615:71;:::i;:::-;3696:82;3774:2;3763:9;3759:18;3750:6;3696:82;:::i;:::-;3825:9;3819:4;3815:20;3810:2;3799:9;3795:18;3788:48;3853:78;3926:4;3917:6;3853:78;:::i;:::-;3845:86;;3569:369;;;;;;:::o;3944:443::-;;4133:2;4122:9;4118:18;4110:26;;4146:81;4224:1;4213:9;4209:17;4200:6;4146:81;:::i;:::-;4274:9;4268:4;4264:20;4259:2;4248:9;4244:18;4237:48;4302:78;4375:4;4366:6;4302:78;:::i;:::-;4294:86;;4100:287;;;;;:::o;4393:419::-;;4597:2;4586:9;4582:18;4574:26;;4646:9;4640:4;4636:20;4632:1;4621:9;4617:17;4610:47;4674:131;4800:4;4674:131;:::i;:::-;4666:139;;4564:248;;;:::o;4818:283::-;;4884:2;4878:9;4868:19;;4926:4;4918:6;4914:17;5033:6;5021:10;5018:22;4997:18;4985:10;4982:34;4979:62;4976:2;;;5044:18;;:::i;:::-;4976:2;5084:10;5080:2;5073:22;4858:243;;;;:::o;5107:332::-;;5259:18;5251:6;5248:30;5245:2;;;5281:18;;:::i;:::-;5245:2;5366:4;5362:9;5355:4;5347:6;5343:17;5339:33;5331:41;;5427:4;5421;5417:15;5409:23;;5174:265;;;:::o;5445:99::-;;5531:5;5525:12;5515:22;;5504:40;;;:::o;5550:169::-;;5668:6;5663:3;5656:19;5708:4;5703:3;5699:14;5684:29;;5646:73;;;;:::o;5725:96::-;;5791:24;5809:5;5791:24;:::i;:::-;5780:35;;5770:51;;;:::o;5827:135::-;;5905:5;5894:16;;5911:45;5950:5;5911:45;:::i;:::-;5884:78;;;:::o;5968:126::-;;6045:42;6038:5;6034:54;6023:65;;6013:81;;;:::o;6100:135::-;;6193:36;6223:5;6193:36;:::i;:::-;6180:49;;6170:65;;;:::o;6241:154::-;6325:6;6320:3;6315;6302:30;6387:1;6378:6;6373:3;6369:16;6362:27;6292:103;;;:::o;6401:307::-;6469:1;6479:113;6493:6;6490:1;6487:13;6479:113;;;6578:1;6573:3;6569:11;6563:18;6559:1;6554:3;6550:11;6543:39;6515:2;6512:1;6508:10;6503:15;;6479:113;;;6610:6;6607:1;6604:13;6601:2;;;6690:1;6681:6;6676:3;6672:16;6665:27;6601:2;6450:258;;;;:::o;6714:180::-;6762:77;6759:1;6752:88;6859:4;6856:1;6849:15;6883:4;6880:1;6873:15;6900:180;6948:77;6945:1;6938:88;7045:4;7042:1;7035:15;7069:4;7066:1;7059:15;7086:102;;7178:2;7174:7;7169:2;7162:5;7158:14;7154:28;7144:38;;7134:54;;;:::o;7194:117::-;7279:1;7272:5;7269:12;7259:2;;7285:18;;:::i;:::-;7259:2;7249:62;:::o;7317:122::-;7390:24;7408:5;7390:24;:::i;:::-;7383:5;7380:35;7370:2;;7429:1;7426;7419:12;7370:2;7360:79;:::o;7445:111::-;7530:1;7523:5;7520:12;7510:2;;7546:1;7543;7536:12;7510:2;7500:56;:::o;7562:107::-;7643:1;7636:5;7633:12;7623:2;;7659:1;7656;7649:12;7623:2;7613:56;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"./HealthRecordsStorage.sol\";\r\nimport \"./RolesStorage.sol\";\r\n\r\ncontract UploadData {\r\n    HealthRecordsStorage private healthRecordsStorage;\r\n    RolesStorage private rolesStorage;\r\n\r\n    event DataUploaded(\r\n        address indexed patient,\r\n        address indexed uploader,\r\n        HealthRecordsStorage.DataType dataType,\r\n        string dataHash\r\n    );\r\n\r\n    modifier onlyDoctorOrAdmin() {\r\n        require(\r\n            rolesStorage.getRole(msg.sender) == RolesStorage.Role.Doctor ||\r\n                rolesStorage.getRole(msg.sender) == RolesStorage.Role.Admin,\r\n            \"Only doctors or admins can upload data\"\r\n        );\r\n        _;\r\n    }\r\n\r\n    constructor(address _healthRecordsStorage, address _rolesStorage) {\r\n        healthRecordsStorage = HealthRecordsStorage(_healthRecordsStorage);\r\n        rolesStorage = RolesStorage(_rolesStorage);\r\n    }\r\n\r\n    function uploadPatientData(\r\n        address patient,\r\n        HealthRecordsStorage.DataType dataType,\r\n        string memory dataHash\r\n    ) external onlyDoctorOrAdmin {\r\n        healthRecordsStorage.storeRecord(patient, dataType, dataHash);\r\n        emit DataUploaded(patient, msg.sender, dataType, dataHash);\r\n    }\r\n}\r\n",
-  "sourcePath": "D:\\Code\\Web3-Healthcare\\server\\contracts\\UploadData.sol",
+  "sourcePath": "D:\\Code\\Web3-Healthcare\\server\\src\\contracts\\UploadData.sol",
   "ast": {
     "absolutePath": "project:/contracts/UploadData.sol",
     "exportedSymbols": {
@@ -4952,18 +4952,18 @@
         280
       ],
       "RolesStorage": [
-        530
+        531
       ],
       "UploadData": [
-        628
+        629
       ]
     },
-    "id": 629,
+    "id": 630,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 532,
+        "id": 533,
         "literals": [
           "solidity",
           "^",
@@ -4976,9 +4976,9 @@
       {
         "absolutePath": "project:/contracts/HealthRecordsStorage.sol",
         "file": "./HealthRecordsStorage.sol",
-        "id": 533,
+        "id": 534,
         "nodeType": "ImportDirective",
-        "scope": 629,
+        "scope": 630,
         "sourceUnit": 281,
         "src": "60:36:4",
         "symbolAliases": [],
@@ -4987,10 +4987,10 @@
       {
         "absolutePath": "project:/contracts/RolesStorage.sol",
         "file": "./RolesStorage.sol",
-        "id": 534,
+        "id": 535,
         "nodeType": "ImportDirective",
-        "scope": 629,
-        "sourceUnit": 531,
+        "scope": 630,
+        "sourceUnit": 532,
         "src": "98:28:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5001,20 +5001,20 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 628,
+        "id": 629,
         "linearizedBaseContracts": [
-          628
+          629
         ],
         "name": "UploadData",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 537,
+            "id": 538,
             "mutability": "mutable",
             "name": "healthRecordsStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 628,
+            "scope": 629,
             "src": "157:49:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -5023,10 +5023,10 @@
               "typeString": "contract HealthRecordsStorage"
             },
             "typeName": {
-              "id": 536,
+              "id": 537,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 535,
+                "id": 536,
                 "name": "HealthRecordsStorage",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 280,
@@ -5043,32 +5043,32 @@
           },
           {
             "constant": false,
-            "id": 540,
+            "id": 541,
             "mutability": "mutable",
             "name": "rolesStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 628,
+            "scope": 629,
             "src": "213:33:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RolesStorage_$530",
+              "typeIdentifier": "t_contract$_RolesStorage_$531",
               "typeString": "contract RolesStorage"
             },
             "typeName": {
-              "id": 539,
+              "id": 540,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 538,
+                "id": 539,
                 "name": "RolesStorage",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 530,
+                "referencedDeclaration": 531,
                 "src": "213:12:4"
               },
-              "referencedDeclaration": 530,
+              "referencedDeclaration": 531,
               "src": "213:12:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RolesStorage_$530",
+                "typeIdentifier": "t_contract$_RolesStorage_$531",
                 "typeString": "contract RolesStorage"
               }
             },
@@ -5076,21 +5076,21 @@
           },
           {
             "anonymous": false,
-            "id": 551,
+            "id": 552,
             "name": "DataUploaded",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 550,
+              "id": 551,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 542,
+                  "id": 543,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "patient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
+                  "scope": 552,
                   "src": "284:23:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5099,7 +5099,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 541,
+                    "id": 542,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "284:7:4",
@@ -5113,12 +5113,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 544,
+                  "id": 545,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "uploader",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
+                  "scope": 552,
                   "src": "318:24:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5127,7 +5127,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 543,
+                    "id": 544,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "318:7:4",
@@ -5141,12 +5141,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 547,
+                  "id": 548,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
+                  "scope": 552,
                   "src": "353:38:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5155,10 +5155,10 @@
                     "typeString": "enum HealthRecordsStorage.DataType"
                   },
                   "typeName": {
-                    "id": 546,
+                    "id": 547,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 545,
+                      "id": 546,
                       "name": "HealthRecordsStorage.DataType",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 161,
@@ -5175,12 +5175,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 549,
+                  "id": 550,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
+                  "scope": 552,
                   "src": "402:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5189,7 +5189,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 548,
+                    "id": 549,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "402:6:4",
@@ -5207,7 +5207,7 @@
           },
           {
             "body": {
-              "id": 577,
+              "id": 578,
               "nodeType": "Block",
               "src": "462:259:4",
               "statements": [
@@ -5219,17 +5219,17 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 572,
+                        "id": 573,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "commonType": {
-                            "typeIdentifier": "t_enum$_Role_$376",
+                            "typeIdentifier": "t_enum$_Role_$377",
                             "typeString": "enum RolesStorage.Role"
                           },
-                          "id": 562,
+                          "id": 563,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5238,7 +5238,7 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 556,
+                                  "id": 557,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -5249,7 +5249,7 @@
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 557,
+                                "id": 558,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -5271,32 +5271,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 554,
+                                "id": 555,
                                 "name": "rolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 540,
+                                "referencedDeclaration": 541,
                                 "src": "495:12:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_RolesStorage_$530",
+                                  "typeIdentifier": "t_contract$_RolesStorage_$531",
                                   "typeString": "contract RolesStorage"
                                 }
                               },
-                              "id": 555,
+                              "id": 556,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getRole",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 431,
+                              "referencedDeclaration": 432,
                               "src": "495:20:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$376_$",
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$377_$",
                                 "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                               }
                             },
-                            "id": 558,
+                            "id": 559,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5307,7 +5307,7 @@
                             "src": "495:32:4",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$376",
+                              "typeIdentifier": "t_enum$_Role_$377",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -5316,32 +5316,32 @@
                           "rightExpression": {
                             "expression": {
                               "expression": {
-                                "id": 559,
+                                "id": 560,
                                 "name": "RolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 530,
+                                "referencedDeclaration": 531,
                                 "src": "531:12:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$530_$",
+                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$531_$",
                                   "typeString": "type(contract RolesStorage)"
                                 }
                               },
-                              "id": 560,
+                              "id": 561,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "Role",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 376,
+                              "referencedDeclaration": 377,
                               "src": "531:17:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_Role_$376_$",
+                                "typeIdentifier": "t_type$_t_enum$_Role_$377_$",
                                 "typeString": "type(enum RolesStorage.Role)"
                               }
                             },
-                            "id": 561,
+                            "id": 562,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5350,7 +5350,7 @@
                             "nodeType": "MemberAccess",
                             "src": "531:24:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$376",
+                              "typeIdentifier": "t_enum$_Role_$377",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -5364,10 +5364,10 @@
                         "operator": "||",
                         "rightExpression": {
                           "commonType": {
-                            "typeIdentifier": "t_enum$_Role_$376",
+                            "typeIdentifier": "t_enum$_Role_$377",
                             "typeString": "enum RolesStorage.Role"
                           },
-                          "id": 571,
+                          "id": 572,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -5376,7 +5376,7 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 565,
+                                  "id": 566,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -5387,7 +5387,7 @@
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 566,
+                                "id": 567,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -5409,32 +5409,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 563,
+                                "id": 564,
                                 "name": "rolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 540,
+                                "referencedDeclaration": 541,
                                 "src": "576:12:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_RolesStorage_$530",
+                                  "typeIdentifier": "t_contract$_RolesStorage_$531",
                                   "typeString": "contract RolesStorage"
                                 }
                               },
-                              "id": 564,
+                              "id": 565,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getRole",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 431,
+                              "referencedDeclaration": 432,
                               "src": "576:20:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$376_$",
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$377_$",
                                 "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                               }
                             },
-                            "id": 567,
+                            "id": 568,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5445,7 +5445,7 @@
                             "src": "576:32:4",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$376",
+                              "typeIdentifier": "t_enum$_Role_$377",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -5454,32 +5454,32 @@
                           "rightExpression": {
                             "expression": {
                               "expression": {
-                                "id": 568,
+                                "id": 569,
                                 "name": "RolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 530,
+                                "referencedDeclaration": 531,
                                 "src": "612:12:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$530_$",
+                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$531_$",
                                   "typeString": "type(contract RolesStorage)"
                                 }
                               },
-                              "id": 569,
+                              "id": 570,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "Role",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 376,
+                              "referencedDeclaration": 377,
                               "src": "612:17:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_Role_$376_$",
+                                "typeIdentifier": "t_type$_t_enum$_Role_$377_$",
                                 "typeString": "type(enum RolesStorage.Role)"
                               }
                             },
-                            "id": 570,
+                            "id": 571,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5488,7 +5488,7 @@
                             "nodeType": "MemberAccess",
                             "src": "612:23:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$376",
+                              "typeIdentifier": "t_enum$_Role_$377",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -5506,7 +5506,7 @@
                       },
                       {
                         "hexValue": "4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f61642064617461",
-                        "id": 573,
+                        "id": 574,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5532,7 +5532,7 @@
                           "typeString": "literal_string \"Only doctors or admins can upload data\""
                         }
                       ],
-                      "id": 553,
+                      "id": 554,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -5546,7 +5546,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 574,
+                    "id": 575,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5561,22 +5561,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 575,
+                  "id": 576,
                   "nodeType": "ExpressionStatement",
                   "src": "473:228:4"
                 },
                 {
-                  "id": 576,
+                  "id": 577,
                   "nodeType": "PlaceholderStatement",
                   "src": "712:1:4"
                 }
               ]
             },
-            "id": 578,
+            "id": 579,
             "name": "onlyDoctorOrAdmin",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 552,
+              "id": 553,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "459:2:4"
@@ -5587,23 +5587,23 @@
           },
           {
             "body": {
-              "id": 597,
+              "id": 598,
               "nodeType": "Block",
               "src": "795:138:4",
               "statements": [
                 {
                   "expression": {
-                    "id": 589,
+                    "id": 590,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 585,
+                      "id": 586,
                       "name": "healthRecordsStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 537,
+                      "referencedDeclaration": 538,
                       "src": "806:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_HealthRecordsStorage_$280",
@@ -5615,11 +5615,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 587,
+                          "id": 588,
                           "name": "_healthRecordsStorage",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 580,
+                          "referencedDeclaration": 581,
                           "src": "850:21:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -5634,7 +5634,7 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 586,
+                        "id": 587,
                         "name": "HealthRecordsStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5645,7 +5645,7 @@
                           "typeString": "type(contract HealthRecordsStorage)"
                         }
                       },
-                      "id": 588,
+                      "id": 589,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5666,26 +5666,26 @@
                       "typeString": "contract HealthRecordsStorage"
                     }
                   },
-                  "id": 590,
+                  "id": 591,
                   "nodeType": "ExpressionStatement",
                   "src": "806:66:4"
                 },
                 {
                   "expression": {
-                    "id": 595,
+                    "id": 596,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 591,
+                      "id": 592,
                       "name": "rolesStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 540,
+                      "referencedDeclaration": 541,
                       "src": "883:12:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$530",
+                        "typeIdentifier": "t_contract$_RolesStorage_$531",
                         "typeString": "contract RolesStorage"
                       }
                     },
@@ -5694,11 +5694,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 593,
+                          "id": 594,
                           "name": "_rolesStorage",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 582,
+                          "referencedDeclaration": 583,
                           "src": "911:13:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -5713,18 +5713,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 592,
+                        "id": 593,
                         "name": "RolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 530,
+                        "referencedDeclaration": 531,
                         "src": "898:12:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$530_$",
+                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$531_$",
                           "typeString": "type(contract RolesStorage)"
                         }
                       },
-                      "id": 594,
+                      "id": 595,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5735,39 +5735,39 @@
                       "src": "898:27:4",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$530",
+                        "typeIdentifier": "t_contract$_RolesStorage_$531",
                         "typeString": "contract RolesStorage"
                       }
                     },
                     "src": "883:42:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RolesStorage_$530",
+                      "typeIdentifier": "t_contract$_RolesStorage_$531",
                       "typeString": "contract RolesStorage"
                     }
                   },
-                  "id": 596,
+                  "id": 597,
                   "nodeType": "ExpressionStatement",
                   "src": "883:42:4"
                 }
               ]
             },
-            "id": 598,
+            "id": 599,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 583,
+              "id": 584,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 580,
+                  "id": 581,
                   "mutability": "mutable",
                   "name": "_healthRecordsStorage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 598,
+                  "scope": 599,
                   "src": "741:29:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5776,7 +5776,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 579,
+                    "id": 580,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "741:7:4",
@@ -5790,11 +5790,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 582,
+                  "id": 583,
                   "mutability": "mutable",
                   "name": "_rolesStorage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 598,
+                  "scope": 599,
                   "src": "772:21:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5803,7 +5803,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 581,
+                    "id": 582,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "772:7:4",
@@ -5819,12 +5819,12 @@
               "src": "740:54:4"
             },
             "returnParameters": {
-              "id": 584,
+              "id": 585,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "795:0:4"
             },
-            "scope": 628,
+            "scope": 629,
             "src": "729:204:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5832,7 +5832,7 @@
           },
           {
             "body": {
-              "id": 626,
+              "id": 627,
               "nodeType": "Block",
               "src": "1110:149:4",
               "statements": [
@@ -5840,11 +5840,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 613,
+                        "id": 614,
                         "name": "patient",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 600,
+                        "referencedDeclaration": 601,
                         "src": "1154:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5852,11 +5852,11 @@
                         }
                       },
                       {
-                        "id": 614,
+                        "id": 615,
                         "name": "dataType",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 603,
+                        "referencedDeclaration": 604,
                         "src": "1163:8:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_DataType_$161",
@@ -5864,11 +5864,11 @@
                         }
                       },
                       {
-                        "id": 615,
+                        "id": 616,
                         "name": "dataHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 605,
+                        "referencedDeclaration": 606,
                         "src": "1173:8:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -5892,18 +5892,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 610,
+                        "id": 611,
                         "name": "healthRecordsStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 537,
+                        "referencedDeclaration": 538,
                         "src": "1121:20:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_HealthRecordsStorage_$280",
                           "typeString": "contract HealthRecordsStorage"
                         }
                       },
-                      "id": 612,
+                      "id": 613,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5917,7 +5917,7 @@
                         "typeString": "function (address,enum HealthRecordsStorage.DataType,string memory) external"
                       }
                     },
-                    "id": 616,
+                    "id": 617,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5932,7 +5932,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 617,
+                  "id": 618,
                   "nodeType": "ExpressionStatement",
                   "src": "1121:61:4"
                 },
@@ -5940,11 +5940,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 619,
+                        "id": 620,
                         "name": "patient",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 600,
+                        "referencedDeclaration": 601,
                         "src": "1211:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -5953,7 +5953,7 @@
                       },
                       {
                         "expression": {
-                          "id": 620,
+                          "id": 621,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -5964,7 +5964,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 621,
+                        "id": 622,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5978,11 +5978,11 @@
                         }
                       },
                       {
-                        "id": 622,
+                        "id": 623,
                         "name": "dataType",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 603,
+                        "referencedDeclaration": 604,
                         "src": "1232:8:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_DataType_$161",
@@ -5990,11 +5990,11 @@
                         }
                       },
                       {
-                        "id": 623,
+                        "id": 624,
                         "name": "dataHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 605,
+                        "referencedDeclaration": 606,
                         "src": "1242:8:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -6021,18 +6021,18 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 618,
+                      "id": 619,
                       "name": "DataUploaded",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 551,
+                      "referencedDeclaration": 552,
                       "src": "1198:12:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_enum$_DataType_$161_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (address,address,enum HealthRecordsStorage.DataType,string memory)"
                       }
                     },
-                    "id": 624,
+                    "id": 625,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6047,24 +6047,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 625,
+                  "id": 626,
                   "nodeType": "EmitStatement",
                   "src": "1193:58:4"
                 }
               ]
             },
             "functionSelector": "9f66aaa3",
-            "id": 627,
+            "id": 628,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 608,
+                "id": 609,
                 "modifierName": {
-                  "id": 607,
+                  "id": 608,
                   "name": "onlyDoctorOrAdmin",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 578,
+                  "referencedDeclaration": 579,
                   "src": "1092:17:4"
                 },
                 "nodeType": "ModifierInvocation",
@@ -6074,16 +6074,16 @@
             "name": "uploadPatientData",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 606,
+              "id": 607,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 600,
+                  "id": 601,
                   "mutability": "mutable",
                   "name": "patient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 627,
+                  "scope": 628,
                   "src": "978:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6092,7 +6092,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 599,
+                    "id": 600,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "978:7:4",
@@ -6106,11 +6106,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 603,
+                  "id": 604,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 627,
+                  "scope": 628,
                   "src": "1004:38:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6119,10 +6119,10 @@
                     "typeString": "enum HealthRecordsStorage.DataType"
                   },
                   "typeName": {
-                    "id": 602,
+                    "id": 603,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 601,
+                      "id": 602,
                       "name": "HealthRecordsStorage.DataType",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 161,
@@ -6139,11 +6139,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 605,
+                  "id": 606,
                   "mutability": "mutable",
                   "name": "dataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 627,
+                  "scope": 628,
                   "src": "1053:22:4",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -6152,7 +6152,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 604,
+                    "id": 605,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1053:6:4",
@@ -6167,19 +6167,19 @@
               "src": "967:115:4"
             },
             "returnParameters": {
-              "id": 609,
+              "id": 610,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1110:0:4"
             },
-            "scope": 628,
+            "scope": 629,
             "src": "941:318:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 629,
+        "scope": 630,
         "src": "130:1132:4"
       }
     ],
@@ -6193,12 +6193,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xd2f70cCbd5a6C0c5472B339167A3B4E357deBC51",
-      "transactionHash": "0x3b5bad54c060b7ccd690bbcef5efa00dc1195f50648c48986c3ac613448dbe39"
+      "address": "0xdD7789Dd2E56fDD6AB0c214938cE276E633375bC",
+      "transactionHash": "0x08d4af16df699bb619d7bdcbb72d24e5e2e207af2d0c30c0bdcb15aae41114a7"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-25T11:35:02.281Z",
+  "updatedAt": "2025-03-26T05:05:06.900Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 contract RolesStorage {
     enum Role {
+        Undefined,
         Doctor,
         Admin,
         Patient
