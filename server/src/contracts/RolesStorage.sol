@@ -32,14 +32,14 @@ contract RolesStorage {
         address patient,
         bool status
     ) external {
-        requests[requester][patient] = status;
+        requests[patient][requester] = status;
     }
 
     function getRequest(
         address requester,
         address patient
     ) external view returns (bool) {
-        return requests[requester][patient];
+        return requests[patient][requester];
     }
 
     function setAllowedRequest(
