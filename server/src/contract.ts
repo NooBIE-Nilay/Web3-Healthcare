@@ -14,11 +14,11 @@ const privateKey = process.env.PRIVATE_KEY;
 if (!privateKey) {
     throw new Error("PRIVATE_KEY is missing in .env file");
 }
-export const signer = new ethers.Wallet(privateKey, provider);
+const signer = new ethers.Wallet(privateKey, provider);
 
 const privateKeyPatient = process.env.PRIVATE_KEY_PATIENT;
 if (!privateKeyPatient) {
-    throw new Error("PRIVATE_KEY is missing in .env file");
+    throw new Error("PRIVATE_KEY_PATIENT is missing in .env file");
 }
 export const patientSigner = new ethers.Wallet(privateKeyPatient, provider);
 

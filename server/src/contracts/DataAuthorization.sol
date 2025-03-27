@@ -30,23 +30,38 @@ contract DataAuthorization {
         rolesStorage = RolesStorage(_rolesStorage);
     }
 
-    function requestData(address patient) external onlyDoctorOrAdmin {
-        rolesStorage.setRequest(msg.sender, patient, true);
-        emit DataRequested(msg.sender, patient);
-    }
-
-    function authorizeData(address requester) external onlyPatient {
-        if (rolesStorage.getRequest(requester, msg.sender)) {
-            rolesStorage.setRequest(requester, msg.sender, false);
-        }
-        rolesStorage.setAllowedRequest(requester, msg.sender, true);
-        emit DataAuthorized(msg.sender, requester);
-    }
-
-    function isAuthorized(
+    function requestData(
         address requester,
         address patient
-    ) external view returns (bool) {
-        return rolesStorage.getAllowedRequest(requester, patient);
+    ) external onlyDoctorOrAdmin {
+        //TODO: check if request from same address exists, if not add
+        rolesStorage.setRequest(requester, patient);
+        emit DataRequested(requester, patient);
+    }
+
+    function authorizeData(
+        address requester,
+        address patient
+    ) external onlyPatient {
+        // if (rolesStorage.getRequest(requester, patient)) {
+        //     rolesStorage.setRequest(requester, patient, false);
+        // }
+
+        //TODO: Search in requests array, bring to last and pop
+
+        rolesStorage.setAllowedRequest(requester, patient);
+        emit DataAuthorized(patient, requester);
+    }
+
+    function checkRequests(
+        address patient
+    ) external view returns (address[] memory) {
+        return rolesStorage.getRequest(patient);
+    }
+
+    function checkAuthorized(
+        address requester
+    ) external view returns (address[] memory) {
+        return rolesStorage.getAllowedRequest(requester);
     }
 }

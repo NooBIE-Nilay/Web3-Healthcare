@@ -1,5 +1,5 @@
 import express from "express";
-import {contracts, provider, signer} from "./contract";
+import {contracts, provider} from "./contract";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 dotenv.config();
@@ -16,13 +16,20 @@ const { DataAuthorization, HealthRecordsStorage, RoleAssignment, RolesStorage, U
 
 
 app.get("/getBalance", async(req,res)=>{
-    const balance = await provider.getBalance(signer.address);
+    const {address}= req.body;
+    if(!address){
+        res.json({message:"Parameters missing"});
+    }
+    const balance = await provider.getBalance(address);
     const finalBalance=ethers.formatEther(balance);
     res.json({"message":`Account Balance: ${finalBalance} ETH`});
 })
 
 app.get("/getRole", async(req,res)=>{
     const {address}= req.body;
+    if(!address){
+        res.json({message:"Parameters missing"});
+    }
     const result = await RoleAssignment.getRole(address);
     res.json({message:`Role of ${address} is ${result}`});
 })
@@ -57,13 +64,22 @@ app.post("/authorizeAcccess", async (req,res)=>{
     res.json({message:"Request ticket approved"})
 })
 
-app.get("/isAuthorized", async(req,res)=>{
-    const {address1, address2}= req.body;
-    if(!address1 || !address2){
+app.get("/checkRequests", async (req, res)=>{
+    const {address}= req.body;
+    if(!address){
         res.json({message:"Parameters missing"});
     }
-    const tx = await DataAuthorization.isAuthorized(address1,address2);
-    res.json({message:`Request approval status: ${tx}`});
+    const tx = await DataAuthorization.checkRequests(address);
+    res.json({message:`Approved requests ${tx}`});
+})
+
+app.get("/checkAuthorized", async(req,res)=>{
+    const {address}= req.body;
+    if(!address){
+        res.json({message:"Parameters missing"});
+    }
+    const tx = await DataAuthorization.checkAuthorized(address);
+    res.json({message:`Approved requests ${tx}`});
 })
 
 app.listen((PORT || 8081), ()=>{

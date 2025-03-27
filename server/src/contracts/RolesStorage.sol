@@ -8,16 +8,10 @@ contract RolesStorage {
         Admin,
         Patient
     }
-    enum DataType {
-        Diagnosis,
-        Prescription,
-        LabResults
-    }
 
     mapping(address => Role) public roles;
-    mapping(address => mapping(address => bool)) private requests;
-    mapping(address => mapping(address => bool)) private allowedRequests;
-    mapping(address => DataType[]) private patientData;
+    mapping(address => address[]) private requests;
+    mapping(address => address[]) private allowedRequests;
 
     function setRole(address account, Role role) external {
         roles[account] = role;
@@ -27,43 +21,24 @@ contract RolesStorage {
         return roles[account];
     }
 
-    function setRequest(
-        address requester,
-        address patient,
-        bool status
-    ) external {
-        requests[patient][requester] = status;
+    function setRequest(address requester, address patient) external {
+        require(patient != requester, "Cannot request self");
+        requests[patient].push(requester);
     }
 
     function getRequest(
-        address requester,
         address patient
-    ) external view returns (bool) {
-        return requests[patient][requester];
+    ) external view returns (address[] memory) {
+        return requests[patient];
     }
 
-    function setAllowedRequest(
-        address requester,
-        address patient,
-        bool status
-    ) external {
-        allowedRequests[requester][patient] = status;
+    function setAllowedRequest(address requester, address patient) external {
+        allowedRequests[requester].push(patient);
     }
 
     function getAllowedRequest(
-        address requester,
-        address patient
-    ) external view returns (bool) {
-        return allowedRequests[requester][patient];
-    }
-
-    function addPatientData(address patient, DataType dataType) external {
-        patientData[patient].push(dataType);
-    }
-
-    function getPatientData(
-        address patient
-    ) external view returns (DataType[] memory) {
-        return patientData[patient];
+        address requester
+    ) external view returns (address[] memory) {
+        return allowedRequests[requester];
     }
 }
