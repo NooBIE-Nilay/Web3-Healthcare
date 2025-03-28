@@ -34,23 +34,18 @@ contract DataAuthorization {
         address requester,
         address patient
     ) external onlyDoctorOrAdmin {
-        //TODO: check if request from same address exists, if not add
-        rolesStorage.setRequest(requester, patient);
+        address[] memory arr = rolesStorage.getRequest(patient);
+        bool exists = false;
+
+        for (uint i = 0; i < arr.length; i++) {
+            if (arr[i] == requester) {
+                exists = true;
+                break;
+            }
+        }
+
+        if (!exists) rolesStorage.setRequest(requester, patient);
         emit DataRequested(requester, patient);
-    }
-
-    function authorizeData(
-        address requester,
-        address patient
-    ) external onlyPatient {
-        // if (rolesStorage.getRequest(requester, patient)) {
-        //     rolesStorage.setRequest(requester, patient, false);
-        // }
-
-        //TODO: Search in requests array, bring to last and pop
-
-        rolesStorage.setAllowedRequest(requester, patient);
-        emit DataAuthorized(patient, requester);
     }
 
     function checkRequests(
@@ -59,9 +54,22 @@ contract DataAuthorization {
         return rolesStorage.getRequest(patient);
     }
 
+    function authorizeData(
+        address requester,
+        address patient
+    ) external onlyPatient {
+        rolesStorage.removeRequest(requester, patient);
+
+        rolesStorage.setAllowedRequest(requester, patient);
+        emit DataAuthorized(patient, requester);
+    }
+
     function checkAuthorized(
         address requester
     ) external view returns (address[] memory) {
         return rolesStorage.getAllowedRequest(requester);
     }
+
+    //TODO: Another function to remove allowed request once viewed
+    //Update: Call removeAllowedRequest in that function when accessed
 }
