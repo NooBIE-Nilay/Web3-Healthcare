@@ -43,7 +43,6 @@ contract RolesStorage {
         return allowedRequests[requester];
     }
 
-    //Didnt check if these 2 functions work. last didnt work. changed. then idk
     function removeRequest(address requester, address patient) external {
         if (requests[patient].length == 0) return;
 

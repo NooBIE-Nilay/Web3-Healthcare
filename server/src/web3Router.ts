@@ -1,21 +1,16 @@
 import express from "express";
 import {contracts, provider} from "./contract";
-import bodyParser from "body-parser";
-import dotenv from "dotenv";
-dotenv.config();
-
-
 import {ethers} from "ethers";
 
-const PORT = process.env.PORT;
-const app= express();
-
-app.use(bodyParser.json());
+const web3Router = express.Router();
 
 const { DataAuthorization, HealthRecordsStorage, RoleAssignment, RolesStorage, UploadData, DataAuthorizationPatient } = contracts;
 
+web3Router.get("/", (req,res)=>{
+    res.json("Hello");
+})
 
-app.get("/getBalance", async(req,res)=>{
+web3Router.get("/getBalance", async(req,res)=>{
     const {address}= req.body;
     if(!address){
         res.json({message:"Parameters missing"});
@@ -25,7 +20,7 @@ app.get("/getBalance", async(req,res)=>{
     res.json({"message":`Account Balance: ${finalBalance} ETH`});
 })
 
-app.get("/getRole", async(req,res)=>{
+web3Router.get("/getRole", async(req,res)=>{
     const {address}= req.body;
     if(!address){
         res.json({message:"Parameters missing"});
@@ -34,54 +29,58 @@ app.get("/getRole", async(req,res)=>{
     res.json({message:`Role of ${address} is ${result}`});
 })
 
-app.post("/assignRole", async (req,res)=>{
+web3Router.post("/assignRole", async (req,res)=>{
     const {address,role}= req.body;
     if(!address || !role) {
         res.json({message:"Parameters missing"});
     }
-    const tx = await RoleAssignment.assignRole(address, role, {gasLimit:500000});
+    const tx = await RoleAssignment.assignRole(address, role);
     await tx.wait();
-    res.json("Role Assigned");
+    res.json(`Role ${role} assigned to ${address}`);
 })
 
-app.get("/requestAccess",async (req,res)=>{
-    const {address}= req.body;
-    if(!address){
+web3Router.get("/requestAccess",async (req,res)=>{
+    const {requester, patient}= req.body;
+    if(!requester || !patient){
         res.json({message:"Parameters missing"});
     }
-    const tx = await DataAuthorization.requestData(address);
+    const tx = await DataAuthorization.requestData(requester,patient);
     await tx.wait();
     res.json({message:"Request ticket created"});
 })
 
-app.post("/authorizeAcccess", async (req,res)=>{
-    const {address}= req.body;
-    if(!address){
+web3Router.post("/authorizeAcccess", async (req,res)=>{
+    const {requester, patient}= req.body;
+    if(!requester || !patient){
         res.json({message:"Parameters missing"});
     }
-    const tx = await DataAuthorizationPatient.authorizeData(address);
+    const tx = await DataAuthorizationPatient.authorizeData(requester,patient);
     tx.wait();
-    res.json({message:"Request ticket approved"})
+    res.json({message:"Request ticket Approved"})
 })
 
-app.get("/checkRequests", async (req, res)=>{
+web3Router.get("/checkRequests", async (req, res)=>{
     const {address}= req.body;
     if(!address){
         res.json({message:"Parameters missing"});
     }
     const tx = await DataAuthorization.checkRequests(address);
-    res.json({message:`Approved requests ${tx}`});
+    res.json({
+        message:"Pending requests:",
+        requests: tx
+    });
 })
 
-app.get("/checkAuthorized", async(req,res)=>{
+web3Router.get("/checkAuthorized", async(req,res)=>{
     const {address}= req.body;
     if(!address){
         res.json({message:"Parameters missing"});
     }
     const tx = await DataAuthorization.checkAuthorized(address);
-    res.json({message:`Approved requests ${tx}`});
+    res.json({
+        message:"Approved requests:",
+        requests: tx
+    });
 })
 
-app.listen((PORT || 8081), ()=>{
-    console.log(`Server running in port ${PORT}`);
-}) 
+export default web3Router;
