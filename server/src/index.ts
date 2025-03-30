@@ -6,10 +6,19 @@ import cors from "cors";
 import fs from "fs";
 import axios from "axios";
 import { generateHashFromFile } from "./utils/generateHashFromFile";
+import bodyParser from "body-parser";
+import web3Router from "./web3Router";
+import dotenv from "dotenv";
+dotenv.config();
+
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
+const PORT = process.env.PORT;
+
+app.use("/api/web3", web3Router);
 
 app.get("/", (req, res) => {
   res.json({ msg: "Server is Online" });
@@ -22,15 +31,6 @@ app.get("/login", (req, res) => {
 app.get("/signup", (req, res) => {
   //TODO: Signup Logic
   //requires Aadhar for verification and links userId with public Address
-});
-
-app.get("/requestAccess", (req, res) => {
-  // TODO: Dr Requests Access From the Patient
-  // req.publicKey
-});
-
-app.get("/viewRequests", (req, res) => {
-  // TODO: Patient views all requests =>{public key[]}
 });
 
 try {
@@ -76,4 +76,4 @@ app.get("/download", async (req, res) => {
   }
 });
 
-app.listen(8080, () => console.log("Server Runnning in Port 8080"));
+app.listen(PORT || 8081, () => console.log(`Server Runnning in Port ${PORT}`));
