@@ -978,7 +978,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_DataType_$203",
+                      "name": "validator_revert_t_enum$_DataType_$231",
                       "nodeType": "YulIdentifier",
                       "src": "614:38:5"
                     },
@@ -990,7 +990,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_DataType_$203",
+            "name": "abi_decode_t_enum$_DataType_$231",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1058,7 +1058,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_Role_$419",
+                      "name": "validator_revert_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "783:34:5"
                     },
@@ -1070,7 +1070,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_Role_$419_fromMemory",
+            "name": "abi_decode_t_enum$_Role_$447_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1697,7 +1697,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_DataType_$203",
+                          "name": "abi_decode_t_enum$_DataType_$231",
                           "nodeType": "YulIdentifier",
                           "src": "1773:32:5"
                         },
@@ -1878,7 +1878,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_addresst_enum$_DataType_$203t_string_memory_ptr",
+            "name": "abi_decode_tuple_t_addresst_enum$_DataType_$231t_string_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2055,7 +2055,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_Role_$419_fromMemory",
+                          "name": "abi_decode_t_enum$_Role_$447_fromMemory",
                           "nodeType": "YulIdentifier",
                           "src": "2303:39:5"
                         },
@@ -2074,7 +2074,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_enum$_Role_$419_fromMemory",
+            "name": "abi_decode_tuple_t_enum$_Role_$447_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2122,7 +2122,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr",
+                      "name": "abi_encode_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "2560:91:5"
                     },
@@ -2139,7 +2139,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2304,7 +2304,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "3216:76:5"
                     },
@@ -2337,7 +2337,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "3315:102:5"
                     },
@@ -2432,7 +2432,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "3531:78:5"
                     },
@@ -2556,7 +2556,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "3830:101:5"
                           },
@@ -2583,7 +2583,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "3975:81:5"
                           },
@@ -2757,7 +2757,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2805,7 +2805,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_DataType_$203_to_t_uint8",
+                          "name": "convert_t_enum$_DataType_$231_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "4246:40:5"
                         },
@@ -2826,7 +2826,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_DataType_$203_to_t_uint8",
+            "name": "abi_encode_t_enum$_DataType_$231_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2866,7 +2866,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_DataType_$203_to_t_uint8",
+                          "name": "convert_t_enum$_DataType_$231_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "4403:40:5"
                         },
@@ -2887,7 +2887,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_DataType_$203_to_t_uint8_fromStack",
+            "name": "abi_encode_t_enum$_DataType_$231_to_t_uint8_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3581,7 +3581,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_encode_t_enum$_DataType_$203_to_t_uint8",
+                          "name": "abi_encode_t_enum$_DataType_$231_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "5914:43:5"
                         },
@@ -3944,7 +3944,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr",
+            "name": "abi_encode_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4256,7 +4256,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "7296:151:5"
                     },
@@ -4273,7 +4273,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4371,7 +4371,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_DataType_$203_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_DataType_$231_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "7677:53:5"
                     },
@@ -4474,7 +4474,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_enum$_DataType_$203_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_enum$_DataType_$231_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5076,7 +5076,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5130,7 +5130,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5245,7 +5245,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5331,7 +5331,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5626,7 +5626,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_assert_t_enum$_DataType_$203",
+                      "name": "validator_assert_t_enum$_DataType_$231",
                       "nodeType": "YulIdentifier",
                       "src": "10290:38:5"
                     },
@@ -5638,7 +5638,7 @@
                 }
               ]
             },
-            "name": "cleanup_t_enum$_DataType_$203",
+            "name": "cleanup_t_enum$_DataType_$231",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5779,7 +5779,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "cleanup_t_enum$_DataType_$203",
+                      "name": "cleanup_t_enum$_DataType_$231",
                       "nodeType": "YulIdentifier",
                       "src": "10655:29:5"
                     },
@@ -5796,7 +5796,7 @@
                 }
               ]
             },
-            "name": "convert_t_enum$_DataType_$203_to_t_uint8",
+            "name": "convert_t_enum$_DataType_$231_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6856,7 +6856,7 @@
                 }
               ]
             },
-            "name": "validator_assert_t_enum$_DataType_$203",
+            "name": "validator_assert_t_enum$_DataType_$231",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7049,7 +7049,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_DataType_$203",
+            "name": "validator_revert_t_enum$_DataType_$231",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7141,7 +7141,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_Role_$419",
+            "name": "validator_revert_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7155,7 +7155,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_DataType_$203(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_DataType_$203(value)\n    }\n\n    function abi_decode_t_enum$_Role_$419_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$419(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_DataType_$203t_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_DataType_$203(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 64))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value2 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$419_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$419_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct HealthRecordsStorage.HealthRecord[] -> struct HealthRecordsStorage.HealthRecord[]\n    function abi_encode_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_enum$_DataType_$203_to_t_uint8(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$203_to_t_uint8(value))\n    }\n\n    function abi_encode_t_enum$_DataType_$203_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$203_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n\n        mstore(add(pos, 0), \"Only doctors or admins can uploa\")\n\n        mstore(add(pos, 32), \"d data\")\n\n        end := add(pos, 64)\n    }\n\n    // struct HealthRecordsStorage.HealthRecord -> struct HealthRecordsStorage.HealthRecord\n    function abi_encode_t_struct$_HealthRecord_$213_memory_ptr_to_t_struct$_HealthRecord_$213_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x80)\n\n        {\n            // dataType\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_enum$_DataType_$203_to_t_uint8(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // dataHash\n\n            let memberValue0 := mload(add(value, 0x20))\n\n            mstore(add(pos, 0x20), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // uploadedBy\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // timestamp\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_enum$_DataType_$203_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_enum$_DataType_$203_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_DataType_$203(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_DataType_$203(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_enum$_DataType_$203_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_DataType_$203(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_DataType_$203(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_DataType_$203(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$419(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_DataType_$231(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_DataType_$231(value)\n    }\n\n    function abi_decode_t_enum$_Role_$447_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$447(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_DataType_$231t_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_DataType_$231(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 64))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value2 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$447_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$447_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct HealthRecordsStorage.HealthRecord[] -> struct HealthRecordsStorage.HealthRecord[]\n    function abi_encode_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_enum$_DataType_$231_to_t_uint8(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$231_to_t_uint8(value))\n    }\n\n    function abi_encode_t_enum$_DataType_$231_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_DataType_$231_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n\n        mstore(add(pos, 0), \"Only doctors or admins can uploa\")\n\n        mstore(add(pos, 32), \"d data\")\n\n        end := add(pos, 64)\n    }\n\n    // struct HealthRecordsStorage.HealthRecord -> struct HealthRecordsStorage.HealthRecord\n    function abi_encode_t_struct$_HealthRecord_$241_memory_ptr_to_t_struct$_HealthRecord_$241_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x80)\n\n        {\n            // dataType\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_enum$_DataType_$231_to_t_uint8(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // dataHash\n\n            let memberValue0 := mload(add(value, 0x20))\n\n            mstore(add(pos, 0x20), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // uploadedBy\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // timestamp\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_enum$_DataType_$231_t_string_memory_ptr__to_t_uint8_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_enum$_DataType_$231_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_335e8ee8a76354b520b2802bf52a4b50541ba837ec349fea0809f5ce56c6d62f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_DataType_$231(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_DataType_$231(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_enum$_DataType_$231_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_DataType_$231(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_DataType_$231(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_DataType_$231(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$447(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n}\n",
       "id": 5,
       "language": "Yul",
       "name": "#utility.yul"
@@ -7169,18 +7169,18 @@
     "absolutePath": "project:/contracts/HealthRecordsStorage.sol",
     "exportedSymbols": {
       "HealthRecordsStorage": [
-        322
+        350
       ],
       "RolesStorage": [
-        661
+        689
       ]
     },
-    "id": 323,
+    "id": 351,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 197,
+        "id": 225,
         "literals": [
           "solidity",
           "^",
@@ -7193,10 +7193,10 @@
       {
         "absolutePath": "project:/contracts/RolesStorage.sol",
         "file": "./RolesStorage.sol",
-        "id": 198,
+        "id": 226,
         "nodeType": "ImportDirective",
-        "scope": 323,
-        "sourceUnit": 662,
+        "scope": 351,
+        "sourceUnit": 690,
         "src": "60:28:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -7207,37 +7207,37 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 322,
+        "id": 350,
         "linearizedBaseContracts": [
-          322
+          350
         ],
         "name": "HealthRecordsStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "HealthRecordsStorage.DataType",
-            "id": 203,
+            "id": 231,
             "members": [
               {
-                "id": 199,
+                "id": 227,
                 "name": "Diagnosis",
                 "nodeType": "EnumValue",
                 "src": "154:9:1"
               },
               {
-                "id": 200,
+                "id": 228,
                 "name": "Prescription",
                 "nodeType": "EnumValue",
                 "src": "174:12:1"
               },
               {
-                "id": 201,
+                "id": 229,
                 "name": "TestResults",
                 "nodeType": "EnumValue",
                 "src": "197:11:1"
               },
               {
-                "id": 202,
+                "id": 230,
                 "name": "Other",
                 "nodeType": "EnumValue",
                 "src": "219:5:1"
@@ -7249,36 +7249,36 @@
           },
           {
             "canonicalName": "HealthRecordsStorage.HealthRecord",
-            "id": 213,
+            "id": 241,
             "members": [
               {
                 "constant": false,
-                "id": 206,
+                "id": 234,
                 "mutability": "mutable",
                 "name": "dataType",
                 "nodeType": "VariableDeclaration",
-                "scope": 213,
+                "scope": 241,
                 "src": "270:17:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_DataType_$203",
+                  "typeIdentifier": "t_enum$_DataType_$231",
                   "typeString": "enum HealthRecordsStorage.DataType"
                 },
                 "typeName": {
-                  "id": 205,
+                  "id": 233,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 204,
+                    "id": 232,
                     "name": "DataType",
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 203,
+                    "referencedDeclaration": 231,
                     "src": "270:8:1"
                   },
-                  "referencedDeclaration": 203,
+                  "referencedDeclaration": 231,
                   "src": "270:8:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_DataType_$203",
+                    "typeIdentifier": "t_enum$_DataType_$231",
                     "typeString": "enum HealthRecordsStorage.DataType"
                   }
                 },
@@ -7286,11 +7286,11 @@
               },
               {
                 "constant": false,
-                "id": 208,
+                "id": 236,
                 "mutability": "mutable",
                 "name": "dataHash",
                 "nodeType": "VariableDeclaration",
-                "scope": 213,
+                "scope": 241,
                 "src": "298:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7299,7 +7299,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 207,
+                  "id": 235,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "298:6:1",
@@ -7312,11 +7312,11 @@
               },
               {
                 "constant": false,
-                "id": 210,
+                "id": 238,
                 "mutability": "mutable",
                 "name": "uploadedBy",
                 "nodeType": "VariableDeclaration",
-                "scope": 213,
+                "scope": 241,
                 "src": "324:18:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7325,7 +7325,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 209,
+                  "id": 237,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "324:7:1",
@@ -7339,11 +7339,11 @@
               },
               {
                 "constant": false,
-                "id": 212,
+                "id": 240,
                 "mutability": "mutable",
                 "name": "timestamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 213,
+                "scope": 241,
                 "src": "353:17:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -7352,7 +7352,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 211,
+                  "id": 239,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "353:7:1",
@@ -7366,38 +7366,38 @@
             ],
             "name": "HealthRecord",
             "nodeType": "StructDefinition",
-            "scope": 322,
+            "scope": 350,
             "src": "239:139:1",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 216,
+            "id": 244,
             "mutability": "mutable",
             "name": "rolesStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 322,
+            "scope": 350,
             "src": "386:33:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RolesStorage_$661",
+              "typeIdentifier": "t_contract$_RolesStorage_$689",
               "typeString": "contract RolesStorage"
             },
             "typeName": {
-              "id": 215,
+              "id": 243,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 214,
+                "id": 242,
                 "name": "RolesStorage",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 661,
+                "referencedDeclaration": 689,
                 "src": "386:12:1"
               },
-              "referencedDeclaration": 661,
+              "referencedDeclaration": 689,
               "src": "386:12:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RolesStorage_$661",
+                "typeIdentifier": "t_contract$_RolesStorage_$689",
                 "typeString": "contract RolesStorage"
               }
             },
@@ -7405,22 +7405,22 @@
           },
           {
             "constant": false,
-            "id": 222,
+            "id": 250,
             "mutability": "mutable",
             "name": "patientRecords",
             "nodeType": "VariableDeclaration",
-            "scope": 322,
+            "scope": 350,
             "src": "428:57:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_$",
               "typeString": "mapping(address => struct HealthRecordsStorage.HealthRecord[])"
             },
             "typeName": {
-              "id": 221,
+              "id": 249,
               "keyType": {
-                "id": 217,
+                "id": 245,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "436:7:1",
@@ -7432,32 +7432,32 @@
               "nodeType": "Mapping",
               "src": "428:34:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_$",
                 "typeString": "mapping(address => struct HealthRecordsStorage.HealthRecord[])"
               },
               "valueType": {
                 "baseType": {
-                  "id": 219,
+                  "id": 247,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 218,
+                    "id": 246,
                     "name": "HealthRecord",
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 213,
+                    "referencedDeclaration": 241,
                     "src": "447:12:1"
                   },
-                  "referencedDeclaration": 213,
+                  "referencedDeclaration": 241,
                   "src": "447:12:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_HealthRecord_$213_storage_ptr",
+                    "typeIdentifier": "t_struct$_HealthRecord_$241_storage_ptr",
                     "typeString": "struct HealthRecordsStorage.HealthRecord"
                   }
                 },
-                "id": 220,
+                "id": 248,
                 "nodeType": "ArrayTypeName",
                 "src": "447:14:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_ptr",
                   "typeString": "struct HealthRecordsStorage.HealthRecord[]"
                 }
               }
@@ -7466,21 +7466,21 @@
           },
           {
             "anonymous": false,
-            "id": 233,
+            "id": 261,
             "name": "RecordUploaded",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 232,
+              "id": 260,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 224,
+                  "id": 252,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "patient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 261,
                   "src": "525:23:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7489,7 +7489,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 223,
+                    "id": 251,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "525:7:1",
@@ -7503,12 +7503,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 226,
+                  "id": 254,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "uploader",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 261,
                   "src": "559:24:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7517,7 +7517,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 225,
+                    "id": 253,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "559:7:1",
@@ -7531,33 +7531,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 229,
+                  "id": 257,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 261,
                   "src": "594:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_DataType_$203",
+                    "typeIdentifier": "t_enum$_DataType_$231",
                     "typeString": "enum HealthRecordsStorage.DataType"
                   },
                   "typeName": {
-                    "id": 228,
+                    "id": 256,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 227,
+                      "id": 255,
                       "name": "DataType",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 203,
+                      "referencedDeclaration": 231,
                       "src": "594:8:1"
                     },
-                    "referencedDeclaration": 203,
+                    "referencedDeclaration": 231,
                     "src": "594:8:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_DataType_$203",
+                      "typeIdentifier": "t_enum$_DataType_$231",
                       "typeString": "enum HealthRecordsStorage.DataType"
                     }
                   },
@@ -7565,12 +7565,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 231,
+                  "id": 259,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
+                  "scope": 261,
                   "src": "622:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7579,7 +7579,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 230,
+                    "id": 258,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "622:6:1",
@@ -7597,7 +7597,7 @@
           },
           {
             "body": {
-              "id": 259,
+              "id": 287,
               "nodeType": "Block",
               "src": "682:259:1",
               "statements": [
@@ -7609,17 +7609,17 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 254,
+                        "id": 282,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "commonType": {
-                            "typeIdentifier": "t_enum$_Role_$419",
+                            "typeIdentifier": "t_enum$_Role_$447",
                             "typeString": "enum RolesStorage.Role"
                           },
-                          "id": 244,
+                          "id": 272,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -7628,7 +7628,7 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 238,
+                                  "id": 266,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -7639,7 +7639,7 @@
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 239,
+                                "id": 267,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -7661,32 +7661,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 236,
+                                "id": 264,
                                 "name": "rolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 216,
+                                "referencedDeclaration": 244,
                                 "src": "715:12:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_RolesStorage_$661",
+                                  "typeIdentifier": "t_contract$_RolesStorage_$689",
                                   "typeString": "contract RolesStorage"
                                 }
                               },
-                              "id": 237,
+                              "id": 265,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getRole",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 462,
+                              "referencedDeclaration": 490,
                               "src": "715:20:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$419_$",
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$447_$",
                                 "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                               }
                             },
-                            "id": 240,
+                            "id": 268,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -7697,7 +7697,7 @@
                             "src": "715:32:1",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$419",
+                              "typeIdentifier": "t_enum$_Role_$447",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -7706,32 +7706,32 @@
                           "rightExpression": {
                             "expression": {
                               "expression": {
-                                "id": 241,
+                                "id": 269,
                                 "name": "RolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 661,
+                                "referencedDeclaration": 689,
                                 "src": "751:12:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                                   "typeString": "type(contract RolesStorage)"
                                 }
                               },
-                              "id": 242,
+                              "id": 270,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "Role",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 419,
+                              "referencedDeclaration": 447,
                               "src": "751:17:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_Role_$419_$",
+                                "typeIdentifier": "t_type$_t_enum$_Role_$447_$",
                                 "typeString": "type(enum RolesStorage.Role)"
                               }
                             },
-                            "id": 243,
+                            "id": 271,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -7740,7 +7740,7 @@
                             "nodeType": "MemberAccess",
                             "src": "751:24:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$419",
+                              "typeIdentifier": "t_enum$_Role_$447",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -7754,10 +7754,10 @@
                         "operator": "||",
                         "rightExpression": {
                           "commonType": {
-                            "typeIdentifier": "t_enum$_Role_$419",
+                            "typeIdentifier": "t_enum$_Role_$447",
                             "typeString": "enum RolesStorage.Role"
                           },
-                          "id": 253,
+                          "id": 281,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -7766,7 +7766,7 @@
                             "arguments": [
                               {
                                 "expression": {
-                                  "id": 247,
+                                  "id": 275,
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -7777,7 +7777,7 @@
                                     "typeString": "msg"
                                   }
                                 },
-                                "id": 248,
+                                "id": 276,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -7799,32 +7799,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 245,
+                                "id": 273,
                                 "name": "rolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 216,
+                                "referencedDeclaration": 244,
                                 "src": "796:12:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_RolesStorage_$661",
+                                  "typeIdentifier": "t_contract$_RolesStorage_$689",
                                   "typeString": "contract RolesStorage"
                                 }
                               },
-                              "id": 246,
+                              "id": 274,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "getRole",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 462,
+                              "referencedDeclaration": 490,
                               "src": "796:20:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$419_$",
+                                "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$447_$",
                                 "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                               }
                             },
-                            "id": 249,
+                            "id": 277,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -7835,7 +7835,7 @@
                             "src": "796:32:1",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$419",
+                              "typeIdentifier": "t_enum$_Role_$447",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -7844,32 +7844,32 @@
                           "rightExpression": {
                             "expression": {
                               "expression": {
-                                "id": 250,
+                                "id": 278,
                                 "name": "RolesStorage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 661,
+                                "referencedDeclaration": 689,
                                 "src": "832:12:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                                  "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                                   "typeString": "type(contract RolesStorage)"
                                 }
                               },
-                              "id": 251,
+                              "id": 279,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "Role",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 419,
+                              "referencedDeclaration": 447,
                               "src": "832:17:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_Role_$419_$",
+                                "typeIdentifier": "t_type$_t_enum$_Role_$447_$",
                                 "typeString": "type(enum RolesStorage.Role)"
                               }
                             },
-                            "id": 252,
+                            "id": 280,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -7878,7 +7878,7 @@
                             "nodeType": "MemberAccess",
                             "src": "832:23:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_Role_$419",
+                              "typeIdentifier": "t_enum$_Role_$447",
                               "typeString": "enum RolesStorage.Role"
                             }
                           },
@@ -7896,7 +7896,7 @@
                       },
                       {
                         "hexValue": "4f6e6c7920646f63746f7273206f722061646d696e732063616e2075706c6f61642064617461",
-                        "id": 255,
+                        "id": 283,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -7922,7 +7922,7 @@
                           "typeString": "literal_string \"Only doctors or admins can upload data\""
                         }
                       ],
-                      "id": 235,
+                      "id": 263,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -7936,7 +7936,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 256,
+                    "id": 284,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7951,22 +7951,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 257,
+                  "id": 285,
                   "nodeType": "ExpressionStatement",
                   "src": "693:228:1"
                 },
                 {
-                  "id": 258,
+                  "id": 286,
                   "nodeType": "PlaceholderStatement",
                   "src": "932:1:1"
                 }
               ]
             },
-            "id": 260,
+            "id": 288,
             "name": "onlyDoctorOrAdmin",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 234,
+              "id": 262,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "679:2:1"
@@ -7977,26 +7977,26 @@
           },
           {
             "body": {
-              "id": 271,
+              "id": 299,
               "nodeType": "Block",
               "src": "984:61:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 269,
+                    "id": 297,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 265,
+                      "id": 293,
                       "name": "rolesStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 216,
+                      "referencedDeclaration": 244,
                       "src": "995:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$661",
+                        "typeIdentifier": "t_contract$_RolesStorage_$689",
                         "typeString": "contract RolesStorage"
                       }
                     },
@@ -8005,11 +8005,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 267,
+                          "id": 295,
                           "name": "_rolesStorage",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 262,
+                          "referencedDeclaration": 290,
                           "src": "1023:13:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -8024,18 +8024,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 266,
+                        "id": 294,
                         "name": "RolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 661,
+                        "referencedDeclaration": 689,
                         "src": "1010:12:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                           "typeString": "type(contract RolesStorage)"
                         }
                       },
-                      "id": 268,
+                      "id": 296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -8046,39 +8046,39 @@
                       "src": "1010:27:1",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$661",
+                        "typeIdentifier": "t_contract$_RolesStorage_$689",
                         "typeString": "contract RolesStorage"
                       }
                     },
                     "src": "995:42:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RolesStorage_$661",
+                      "typeIdentifier": "t_contract$_RolesStorage_$689",
                       "typeString": "contract RolesStorage"
                     }
                   },
-                  "id": 270,
+                  "id": 298,
                   "nodeType": "ExpressionStatement",
                   "src": "995:42:1"
                 }
               ]
             },
-            "id": 272,
+            "id": 300,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 263,
+              "id": 291,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 262,
+                  "id": 290,
                   "mutability": "mutable",
                   "name": "_rolesStorage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 272,
+                  "scope": 300,
                   "src": "961:21:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8087,7 +8087,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 261,
+                    "id": 289,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "961:7:1",
@@ -8103,12 +8103,12 @@
               "src": "960:23:1"
             },
             "returnParameters": {
-              "id": 264,
+              "id": 292,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "984:0:1"
             },
-            "scope": 322,
+            "scope": 350,
             "src": "949:96:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -8116,7 +8116,7 @@
           },
           {
             "body": {
-              "id": 306,
+              "id": 334,
               "nodeType": "Block",
               "src": "1195:205:1",
               "statements": [
@@ -8126,23 +8126,23 @@
                       {
                         "arguments": [
                           {
-                            "id": 289,
+                            "id": 317,
                             "name": "dataType",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 277,
+                            "referencedDeclaration": 305,
                             "src": "1262:8:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_DataType_$203",
+                              "typeIdentifier": "t_enum$_DataType_$231",
                               "typeString": "enum HealthRecordsStorage.DataType"
                             }
                           },
                           {
-                            "id": 290,
+                            "id": 318,
                             "name": "dataHash",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 279,
+                            "referencedDeclaration": 307,
                             "src": "1272:8:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -8151,7 +8151,7 @@
                           },
                           {
                             "expression": {
-                              "id": 291,
+                              "id": 319,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -8162,7 +8162,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 292,
+                            "id": 320,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -8177,7 +8177,7 @@
                           },
                           {
                             "expression": {
-                              "id": 293,
+                              "id": 321,
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -8188,7 +8188,7 @@
                                 "typeString": "block"
                               }
                             },
-                            "id": 294,
+                            "id": 322,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -8205,7 +8205,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_enum$_DataType_$203",
+                              "typeIdentifier": "t_enum$_DataType_$231",
                               "typeString": "enum HealthRecordsStorage.DataType"
                             },
                             {
@@ -8221,18 +8221,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 288,
+                          "id": 316,
                           "name": "HealthRecord",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 213,
+                          "referencedDeclaration": 241,
                           "src": "1249:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_HealthRecord_$213_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_HealthRecord_$241_storage_ptr_$",
                             "typeString": "type(struct HealthRecordsStorage.HealthRecord storage pointer)"
                           }
                         },
-                        "id": 295,
+                        "id": 323,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8243,7 +8243,7 @@
                         "src": "1249:61:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_HealthRecord_$213_memory_ptr",
+                          "typeIdentifier": "t_struct$_HealthRecord_$241_memory_ptr",
                           "typeString": "struct HealthRecordsStorage.HealthRecord memory"
                         }
                       }
@@ -8251,30 +8251,30 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_HealthRecord_$213_memory_ptr",
+                          "typeIdentifier": "t_struct$_HealthRecord_$241_memory_ptr",
                           "typeString": "struct HealthRecordsStorage.HealthRecord memory"
                         }
                       ],
                       "expression": {
                         "baseExpression": {
-                          "id": 284,
+                          "id": 312,
                           "name": "patientRecords",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 222,
+                          "referencedDeclaration": 250,
                           "src": "1206:14:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_$",
                             "typeString": "mapping(address => struct HealthRecordsStorage.HealthRecord storage ref[] storage ref)"
                           }
                         },
-                        "id": 286,
+                        "id": 314,
                         "indexExpression": {
-                          "id": 285,
+                          "id": 313,
                           "name": "patient",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 274,
+                          "referencedDeclaration": 302,
                           "src": "1221:7:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -8288,11 +8288,11 @@
                         "nodeType": "IndexAccess",
                         "src": "1206:23:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage",
                           "typeString": "struct HealthRecordsStorage.HealthRecord storage ref[] storage ref"
                         }
                       },
-                      "id": 287,
+                      "id": 315,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -8301,11 +8301,11 @@
                       "nodeType": "MemberAccess",
                       "src": "1206:28:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_HealthRecord_$213_storage_$returns$__$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_HealthRecord_$241_storage_$returns$__$",
                         "typeString": "function (struct HealthRecordsStorage.HealthRecord storage ref)"
                       }
                     },
-                    "id": 296,
+                    "id": 324,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8320,7 +8320,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 297,
+                  "id": 325,
                   "nodeType": "ExpressionStatement",
                   "src": "1206:115:1"
                 },
@@ -8328,11 +8328,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 299,
+                        "id": 327,
                         "name": "patient",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 274,
+                        "referencedDeclaration": 302,
                         "src": "1352:7:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -8341,7 +8341,7 @@
                       },
                       {
                         "expression": {
-                          "id": 300,
+                          "id": 328,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -8352,7 +8352,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 301,
+                        "id": 329,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -8366,23 +8366,23 @@
                         }
                       },
                       {
-                        "id": 302,
+                        "id": 330,
                         "name": "dataType",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 277,
+                        "referencedDeclaration": 305,
                         "src": "1373:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_DataType_$203",
+                          "typeIdentifier": "t_enum$_DataType_$231",
                           "typeString": "enum HealthRecordsStorage.DataType"
                         }
                       },
                       {
-                        "id": 303,
+                        "id": 331,
                         "name": "dataHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 279,
+                        "referencedDeclaration": 307,
                         "src": "1383:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -8401,7 +8401,7 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_enum$_DataType_$203",
+                          "typeIdentifier": "t_enum$_DataType_$231",
                           "typeString": "enum HealthRecordsStorage.DataType"
                         },
                         {
@@ -8409,18 +8409,18 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 298,
+                      "id": 326,
                       "name": "RecordUploaded",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 233,
+                      "referencedDeclaration": 261,
                       "src": "1337:14:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_enum$_DataType_$203_$_t_string_memory_ptr_$returns$__$",
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_enum$_DataType_$231_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (address,address,enum HealthRecordsStorage.DataType,string memory)"
                       }
                     },
-                    "id": 304,
+                    "id": 332,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -8435,24 +8435,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 305,
+                  "id": 333,
                   "nodeType": "EmitStatement",
                   "src": "1332:60:1"
                 }
               ]
             },
             "functionSelector": "7fcfef94",
-            "id": 307,
+            "id": 335,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 282,
+                "id": 310,
                 "modifierName": {
-                  "id": 281,
+                  "id": 309,
                   "name": "onlyDoctorOrAdmin",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 260,
+                  "referencedDeclaration": 288,
                   "src": "1177:17:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -8462,16 +8462,16 @@
             "name": "storeRecord",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 280,
+              "id": 308,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 274,
+                  "id": 302,
                   "mutability": "mutable",
                   "name": "patient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 307,
+                  "scope": 335,
                   "src": "1084:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8480,7 +8480,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 273,
+                    "id": 301,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1084:7:1",
@@ -8494,32 +8494,32 @@
                 },
                 {
                   "constant": false,
-                  "id": 277,
+                  "id": 305,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 307,
+                  "scope": 335,
                   "src": "1110:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_DataType_$203",
+                    "typeIdentifier": "t_enum$_DataType_$231",
                     "typeString": "enum HealthRecordsStorage.DataType"
                   },
                   "typeName": {
-                    "id": 276,
+                    "id": 304,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 275,
+                      "id": 303,
                       "name": "DataType",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 203,
+                      "referencedDeclaration": 231,
                       "src": "1110:8:1"
                     },
-                    "referencedDeclaration": 203,
+                    "referencedDeclaration": 231,
                     "src": "1110:8:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_DataType_$203",
+                      "typeIdentifier": "t_enum$_DataType_$231",
                       "typeString": "enum HealthRecordsStorage.DataType"
                     }
                   },
@@ -8527,11 +8527,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 279,
+                  "id": 307,
                   "mutability": "mutable",
                   "name": "dataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 307,
+                  "scope": 335,
                   "src": "1138:22:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -8540,7 +8540,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 278,
+                    "id": 306,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1138:6:1",
@@ -8555,12 +8555,12 @@
               "src": "1073:94:1"
             },
             "returnParameters": {
-              "id": 283,
+              "id": 311,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1195:0:1"
             },
-            "scope": 322,
+            "scope": 350,
             "src": "1053:347:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -8568,31 +8568,31 @@
           },
           {
             "body": {
-              "id": 320,
+              "id": 348,
               "nodeType": "Block",
               "src": "1507:49:1",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 316,
+                      "id": 344,
                       "name": "patientRecords",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 222,
+                      "referencedDeclaration": 250,
                       "src": "1525:14:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_$",
                         "typeString": "mapping(address => struct HealthRecordsStorage.HealthRecord storage ref[] storage ref)"
                       }
                     },
-                    "id": 318,
+                    "id": 346,
                     "indexExpression": {
-                      "id": 317,
+                      "id": 345,
                       "name": "patient",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 309,
+                      "referencedDeclaration": 337,
                       "src": "1540:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -8606,35 +8606,35 @@
                     "nodeType": "IndexAccess",
                     "src": "1525:23:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage",
                       "typeString": "struct HealthRecordsStorage.HealthRecord storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 315,
-                  "id": 319,
+                  "functionReturnParameters": 343,
+                  "id": 347,
                   "nodeType": "Return",
                   "src": "1518:30:1"
                 }
               ]
             },
             "functionSelector": "a0076e84",
-            "id": 321,
+            "id": 349,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRecords",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 310,
+              "id": 338,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 309,
+                  "id": 337,
                   "mutability": "mutable",
                   "name": "patient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 321,
+                  "scope": 349,
                   "src": "1438:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8643,7 +8643,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 308,
+                    "id": 336,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1438:7:1",
@@ -8659,46 +8659,46 @@
               "src": "1427:33:1"
             },
             "returnParameters": {
-              "id": 315,
+              "id": 343,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 314,
+                  "id": 342,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 321,
+                  "scope": 349,
                   "src": "1484:21:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_HealthRecord_$213_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_HealthRecord_$241_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct HealthRecordsStorage.HealthRecord[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 312,
+                      "id": 340,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 311,
+                        "id": 339,
                         "name": "HealthRecord",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 213,
+                        "referencedDeclaration": 241,
                         "src": "1484:12:1"
                       },
-                      "referencedDeclaration": 213,
+                      "referencedDeclaration": 241,
                       "src": "1484:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_HealthRecord_$213_storage_ptr",
+                        "typeIdentifier": "t_struct$_HealthRecord_$241_storage_ptr",
                         "typeString": "struct HealthRecordsStorage.HealthRecord"
                       }
                     },
-                    "id": 313,
+                    "id": 341,
                     "nodeType": "ArrayTypeName",
                     "src": "1484:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_HealthRecord_$213_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_HealthRecord_$241_storage_$dyn_storage_ptr",
                       "typeString": "struct HealthRecordsStorage.HealthRecord[]"
                     }
                   },
@@ -8707,14 +8707,14 @@
               ],
               "src": "1483:23:1"
             },
-            "scope": 322,
+            "scope": 350,
             "src": "1408:148:1",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 323,
+        "scope": 351,
         "src": "92:1467:1"
       }
     ],
@@ -8728,12 +8728,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x452935e9EAf703fe5e071f419aa003390687e3d7",
-      "transactionHash": "0xabc28e0ad30defeea136a7f38c65a86719390deaeafb0021f8e7139d46531a34"
+      "address": "0x319c6C2376C97620F798cDdb61AC1b5703f31796",
+      "transactionHash": "0xca0441b169cad8b1b2f0ab2d475064a02784c5828329a6684783f234158fb768"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-29T03:36:09.242Z",
+  "updatedAt": "2025-04-05T11:55:05.638Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

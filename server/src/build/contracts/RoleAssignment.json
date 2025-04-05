@@ -427,7 +427,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_Role_$419_to_t_uint8",
+                          "name": "convert_t_enum$_Role_$447_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "663:36:5"
                         },
@@ -448,7 +448,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack",
+            "name": "abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -581,7 +581,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "978:49:5"
                     },
@@ -593,7 +593,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_address_t_enum$_Role_$419__to_t_address_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_address_t_enum$_Role_$447__to_t_address_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -710,7 +710,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_assert_t_enum$_Role_$419",
+                      "name": "validator_assert_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "1251:34:5"
                     },
@@ -722,7 +722,7 @@
                 }
               ]
             },
-            "name": "cleanup_t_enum$_Role_$419",
+            "name": "cleanup_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -820,7 +820,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "cleanup_t_enum$_Role_$419",
+                      "name": "cleanup_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "1525:25:5"
                     },
@@ -837,7 +837,7 @@
                 }
               ]
             },
-            "name": "convert_t_enum$_Role_$419_to_t_uint8",
+            "name": "convert_t_enum$_Role_$447_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1020,7 +1020,7 @@
                 }
               ]
             },
-            "name": "validator_assert_t_enum$_Role_$419",
+            "name": "validator_assert_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1135,7 +1135,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_address_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Role_$419_to_t_uint8(value))\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_Role_$419__to_t_address_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_Role_$419(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Role_$419(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_Role_$419_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Role_$419(value)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Role_$419(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_address_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Role_$447_to_t_uint8(value))\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_Role_$447__to_t_address_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_Role_$447(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Role_$447(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_Role_$447_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Role_$447(value)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Role_$447(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 5,
       "language": "Yul",
       "name": "#utility.yul"
@@ -1269,7 +1269,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_Role_$419",
+                      "name": "validator_revert_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "260:34:5"
                     },
@@ -1281,7 +1281,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_Role_$419",
+            "name": "abi_decode_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1349,7 +1349,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_Role_$419",
+                      "name": "validator_revert_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "425:34:5"
                     },
@@ -1361,7 +1361,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_Role_$419_fromMemory",
+            "name": "abi_decode_t_enum$_Role_$447_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1783,7 +1783,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_Role_$419",
+                          "name": "abi_decode_t_enum$_Role_$447",
                           "nodeType": "YulIdentifier",
                           "src": "1091:28:5"
                         },
@@ -1802,7 +1802,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_addresst_enum$_Role_$419",
+            "name": "abi_decode_tuple_t_addresst_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1973,7 +1973,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_Role_$419_fromMemory",
+                          "name": "abi_decode_t_enum$_Role_$447_fromMemory",
                           "nodeType": "YulIdentifier",
                           "src": "1386:39:5"
                         },
@@ -1992,7 +1992,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_enum$_Role_$419_fromMemory",
+            "name": "abi_decode_tuple_t_enum$_Role_$447_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2101,7 +2101,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_Role_$419_to_t_uint8",
+                          "name": "convert_t_enum$_Role_$447_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "1698:36:5"
                         },
@@ -2122,7 +2122,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack",
+            "name": "abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2505,7 +2505,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "2573:49:5"
                     },
@@ -2517,7 +2517,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_address_t_enum$_Role_$419__to_t_address_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_address_t_enum$_Role_$447__to_t_address_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2621,7 +2621,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "2814:49:5"
                     },
@@ -2633,7 +2633,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_enum$_Role_$419__to_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_enum$_Role_$447__to_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2983,7 +2983,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_assert_t_enum$_Role_$419",
+                      "name": "validator_assert_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "3686:34:5"
                     },
@@ -2995,7 +2995,7 @@
                 }
               ]
             },
-            "name": "cleanup_t_enum$_Role_$419",
+            "name": "cleanup_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3093,7 +3093,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "cleanup_t_enum$_Role_$419",
+                      "name": "cleanup_t_enum$_Role_$447",
                       "nodeType": "YulIdentifier",
                       "src": "3960:25:5"
                     },
@@ -3110,7 +3110,7 @@
                 }
               ]
             },
-            "name": "convert_t_enum$_Role_$419_to_t_uint8",
+            "name": "convert_t_enum$_Role_$447_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3293,7 +3293,7 @@
                 }
               ]
             },
-            "name": "validator_assert_t_enum$_Role_$419",
+            "name": "validator_assert_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3486,7 +3486,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_Role_$419",
+            "name": "validator_revert_t_enum$_Role_$447",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3500,7 +3500,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_Role_$419(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_Role_$419(value)\n    }\n\n    function abi_decode_t_enum$_Role_$419_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$419(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_Role_$419(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_Role_$419(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$419_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$419_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Role_$419_to_t_uint8(value))\n    }\n\n    function abi_encode_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n\n        mstore(add(pos, 0), \"Only admins can assign roles\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_Role_$419__to_t_address_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_enum$_Role_$419__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_Role_$419_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_Role_$419(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Role_$419(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_Role_$419_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Role_$419(value)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Role_$419(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$419(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_Role_$447(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_Role_$447(value)\n    }\n\n    function abi_decode_t_enum$_Role_$447_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_enum$_Role_$447(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_enum$_Role_$447(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_Role_$447(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_enum$_Role_$447_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Role_$447_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Role_$447_to_t_uint8(value))\n    }\n\n    function abi_encode_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n\n        mstore(add(pos, 0), \"Only admins can assign roles\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_enum$_Role_$447__to_t_address_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_enum$_Role_$447__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_Role_$447_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5553b5f1324fde443c49e2a638475df5dceb841f709cd7147d7d9fe52e10c69b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_Role_$447(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Role_$447(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function convert_t_enum$_Role_$447_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Role_$447(value)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Role_$447(value) {\n        if iszero(lt(value, 4)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_Role_$447(value) {\n        if iszero(lt(value, 4)) { revert(0, 0) }\n    }\n\n}\n",
       "id": 5,
       "language": "Yul",
       "name": "#utility.yul"
@@ -3514,18 +3514,18 @@
     "absolutePath": "project:/contracts/RoleAssignment.sol",
     "exportedSymbols": {
       "RoleAssignment": [
-        412
+        440
       ],
       "RolesStorage": [
-        661
+        689
       ]
     },
-    "id": 413,
+    "id": 441,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 324,
+        "id": 352,
         "literals": [
           "solidity",
           "^",
@@ -3538,10 +3538,10 @@
       {
         "absolutePath": "project:/contracts/RolesStorage.sol",
         "file": "./RolesStorage.sol",
-        "id": 325,
+        "id": 353,
         "nodeType": "ImportDirective",
-        "scope": 413,
-        "sourceUnit": 662,
+        "scope": 441,
+        "sourceUnit": 690,
         "src": "60:28:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3552,41 +3552,41 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 412,
+        "id": 440,
         "linearizedBaseContracts": [
-          412
+          440
         ],
         "name": "RoleAssignment",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 328,
+            "id": 356,
             "mutability": "mutable",
             "name": "rolesStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 412,
+            "scope": 440,
             "src": "123:33:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RolesStorage_$661",
+              "typeIdentifier": "t_contract$_RolesStorage_$689",
               "typeString": "contract RolesStorage"
             },
             "typeName": {
-              "id": 327,
+              "id": 355,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 326,
+                "id": 354,
                 "name": "RolesStorage",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 661,
+                "referencedDeclaration": 689,
                 "src": "123:12:2"
               },
-              "referencedDeclaration": 661,
+              "referencedDeclaration": 689,
               "src": "123:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RolesStorage_$661",
+                "typeIdentifier": "t_contract$_RolesStorage_$689",
                 "typeString": "contract RolesStorage"
               }
             },
@@ -3594,21 +3594,21 @@
           },
           {
             "anonymous": false,
-            "id": 335,
+            "id": 363,
             "name": "RoleAssigned",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 334,
+              "id": 362,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 330,
+                  "id": 358,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 335,
+                  "scope": 363,
                   "src": "184:23:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3617,7 +3617,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 329,
+                    "id": 357,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "184:7:2",
@@ -3631,33 +3631,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 333,
+                  "id": 361,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "role",
                   "nodeType": "VariableDeclaration",
-                  "scope": 335,
+                  "scope": 363,
                   "src": "209:22:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Role_$419",
+                    "typeIdentifier": "t_enum$_Role_$447",
                     "typeString": "enum RolesStorage.Role"
                   },
                   "typeName": {
-                    "id": 332,
+                    "id": 360,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 331,
+                      "id": 359,
                       "name": "RolesStorage.Role",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 419,
+                      "referencedDeclaration": 447,
                       "src": "209:17:2"
                     },
-                    "referencedDeclaration": 419,
+                    "referencedDeclaration": 447,
                     "src": "209:17:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Role_$419",
+                      "typeIdentifier": "t_enum$_Role_$447",
                       "typeString": "enum RolesStorage.Role"
                     }
                   },
@@ -3670,7 +3670,7 @@
           },
           {
             "body": {
-              "id": 351,
+              "id": 379,
               "nodeType": "Block",
               "src": "262:168:2",
               "statements": [
@@ -3679,10 +3679,10 @@
                     "arguments": [
                       {
                         "commonType": {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         },
-                        "id": 346,
+                        "id": 374,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3691,7 +3691,7 @@
                           "arguments": [
                             {
                               "expression": {
-                                "id": 340,
+                                "id": 368,
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -3702,7 +3702,7 @@
                                   "typeString": "msg"
                                 }
                               },
-                              "id": 341,
+                              "id": 369,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -3724,32 +3724,32 @@
                               }
                             ],
                             "expression": {
-                              "id": 338,
+                              "id": 366,
                               "name": "rolesStorage",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 328,
+                              "referencedDeclaration": 356,
                               "src": "295:12:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RolesStorage_$661",
+                                "typeIdentifier": "t_contract$_RolesStorage_$689",
                                 "typeString": "contract RolesStorage"
                               }
                             },
-                            "id": 339,
+                            "id": 367,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "getRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 462,
+                            "referencedDeclaration": 490,
                             "src": "295:20:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$419_$",
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$447_$",
                               "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                             }
                           },
-                          "id": 342,
+                          "id": 370,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3760,7 +3760,7 @@
                           "src": "295:32:2",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_Role_$419",
+                            "typeIdentifier": "t_enum$_Role_$447",
                             "typeString": "enum RolesStorage.Role"
                           }
                         },
@@ -3769,32 +3769,32 @@
                         "rightExpression": {
                           "expression": {
                             "expression": {
-                              "id": 343,
+                              "id": 371,
                               "name": "RolesStorage",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 661,
+                              "referencedDeclaration": 689,
                               "src": "331:12:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                                "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                                 "typeString": "type(contract RolesStorage)"
                               }
                             },
-                            "id": 344,
+                            "id": 372,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "Role",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 419,
+                            "referencedDeclaration": 447,
                             "src": "331:17:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_Role_$419_$",
+                              "typeIdentifier": "t_type$_t_enum$_Role_$447_$",
                               "typeString": "type(enum RolesStorage.Role)"
                             }
                           },
-                          "id": 345,
+                          "id": 373,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3803,7 +3803,7 @@
                           "nodeType": "MemberAccess",
                           "src": "331:23:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_Role_$419",
+                            "typeIdentifier": "t_enum$_Role_$447",
                             "typeString": "enum RolesStorage.Role"
                           }
                         },
@@ -3815,7 +3815,7 @@
                       },
                       {
                         "hexValue": "4f6e6c792061646d696e732063616e2061737369676e20726f6c6573",
-                        "id": 347,
+                        "id": 375,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3841,7 +3841,7 @@
                           "typeString": "literal_string \"Only admins can assign roles\""
                         }
                       ],
-                      "id": 337,
+                      "id": 365,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -3855,7 +3855,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 348,
+                    "id": 376,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3870,22 +3870,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 349,
+                  "id": 377,
                   "nodeType": "ExpressionStatement",
                   "src": "273:137:2"
                 },
                 {
-                  "id": 350,
+                  "id": 378,
                   "nodeType": "PlaceholderStatement",
                   "src": "421:1:2"
                 }
               ]
             },
-            "id": 352,
+            "id": 380,
             "name": "onlyAdmin",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 336,
+              "id": 364,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "259:2:2"
@@ -3896,26 +3896,26 @@
           },
           {
             "body": {
-              "id": 373,
+              "id": 401,
               "nodeType": "Block",
               "src": "473:129:2",
               "statements": [
                 {
                   "expression": {
-                    "id": 361,
+                    "id": 389,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 357,
+                      "id": 385,
                       "name": "rolesStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 328,
+                      "referencedDeclaration": 356,
                       "src": "484:12:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$661",
+                        "typeIdentifier": "t_contract$_RolesStorage_$689",
                         "typeString": "contract RolesStorage"
                       }
                     },
@@ -3924,11 +3924,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 359,
+                          "id": 387,
                           "name": "_rolesStorage",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 354,
+                          "referencedDeclaration": 382,
                           "src": "512:13:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -3943,18 +3943,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 358,
+                        "id": 386,
                         "name": "RolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 661,
+                        "referencedDeclaration": 689,
                         "src": "499:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                          "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                           "typeString": "type(contract RolesStorage)"
                         }
                       },
-                      "id": 360,
+                      "id": 388,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3965,17 +3965,17 @@
                       "src": "499:27:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RolesStorage_$661",
+                        "typeIdentifier": "t_contract$_RolesStorage_$689",
                         "typeString": "contract RolesStorage"
                       }
                     },
                     "src": "484:42:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RolesStorage_$661",
+                      "typeIdentifier": "t_contract$_RolesStorage_$689",
                       "typeString": "contract RolesStorage"
                     }
                   },
-                  "id": 362,
+                  "id": 390,
                   "nodeType": "ExpressionStatement",
                   "src": "484:42:2"
                 },
@@ -3984,7 +3984,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 366,
+                          "id": 394,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -3995,7 +3995,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 367,
+                        "id": 395,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4011,32 +4011,32 @@
                       {
                         "expression": {
                           "expression": {
-                            "id": 368,
+                            "id": 396,
                             "name": "RolesStorage",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 661,
+                            "referencedDeclaration": 689,
                             "src": "570:12:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_RolesStorage_$661_$",
+                              "typeIdentifier": "t_type$_t_contract$_RolesStorage_$689_$",
                               "typeString": "type(contract RolesStorage)"
                             }
                           },
-                          "id": 369,
+                          "id": 397,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "Role",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 419,
+                          "referencedDeclaration": 447,
                           "src": "570:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_Role_$419_$",
+                            "typeIdentifier": "t_type$_t_enum$_Role_$447_$",
                             "typeString": "type(enum RolesStorage.Role)"
                           }
                         },
-                        "id": 370,
+                        "id": 398,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -4045,7 +4045,7 @@
                         "nodeType": "MemberAccess",
                         "src": "570:23:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       }
@@ -4057,37 +4057,37 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       ],
                       "expression": {
-                        "id": 363,
+                        "id": 391,
                         "name": "rolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 328,
+                        "referencedDeclaration": 356,
                         "src": "537:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RolesStorage_$661",
+                          "typeIdentifier": "t_contract$_RolesStorage_$689",
                           "typeString": "contract RolesStorage"
                         }
                       },
-                      "id": 365,
+                      "id": 393,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 449,
+                      "referencedDeclaration": 477,
                       "src": "537:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_enum$_Role_$419_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_enum$_Role_$447_$returns$__$",
                         "typeString": "function (address,enum RolesStorage.Role) external"
                       }
                     },
-                    "id": 371,
+                    "id": 399,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4102,29 +4102,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 372,
+                  "id": 400,
                   "nodeType": "ExpressionStatement",
                   "src": "537:57:2"
                 }
               ]
             },
-            "id": 374,
+            "id": 402,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 355,
+              "id": 383,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 354,
+                  "id": 382,
                   "mutability": "mutable",
                   "name": "_rolesStorage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 374,
+                  "scope": 402,
                   "src": "450:21:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4133,7 +4133,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 353,
+                    "id": 381,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "450:7:2",
@@ -4149,12 +4149,12 @@
               "src": "449:23:2"
             },
             "returnParameters": {
-              "id": 356,
+              "id": 384,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "473:0:2"
             },
-            "scope": 412,
+            "scope": 440,
             "src": "438:164:2",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -4162,7 +4162,7 @@
           },
           {
             "body": {
-              "id": 396,
+              "id": 424,
               "nodeType": "Block",
               "src": "715:97:2",
               "statements": [
@@ -4170,11 +4170,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 387,
+                        "id": 415,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 376,
+                        "referencedDeclaration": 404,
                         "src": "747:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4182,14 +4182,14 @@
                         }
                       },
                       {
-                        "id": 388,
+                        "id": 416,
                         "name": "role",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 379,
+                        "referencedDeclaration": 407,
                         "src": "756:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       }
@@ -4201,37 +4201,37 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       ],
                       "expression": {
-                        "id": 384,
+                        "id": 412,
                         "name": "rolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 328,
+                        "referencedDeclaration": 356,
                         "src": "726:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RolesStorage_$661",
+                          "typeIdentifier": "t_contract$_RolesStorage_$689",
                           "typeString": "contract RolesStorage"
                         }
                       },
-                      "id": 386,
+                      "id": 414,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 449,
+                      "referencedDeclaration": 477,
                       "src": "726:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_enum$_Role_$419_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_enum$_Role_$447_$returns$__$",
                         "typeString": "function (address,enum RolesStorage.Role) external"
                       }
                     },
-                    "id": 389,
+                    "id": 417,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4246,7 +4246,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 390,
+                  "id": 418,
                   "nodeType": "ExpressionStatement",
                   "src": "726:35:2"
                 },
@@ -4254,11 +4254,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 392,
+                        "id": 420,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 376,
+                        "referencedDeclaration": 404,
                         "src": "790:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4266,14 +4266,14 @@
                         }
                       },
                       {
-                        "id": 393,
+                        "id": 421,
                         "name": "role",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 379,
+                        "referencedDeclaration": 407,
                         "src": "799:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       }
@@ -4285,22 +4285,22 @@
                           "typeString": "address"
                         },
                         {
-                          "typeIdentifier": "t_enum$_Role_$419",
+                          "typeIdentifier": "t_enum$_Role_$447",
                           "typeString": "enum RolesStorage.Role"
                         }
                       ],
-                      "id": 391,
+                      "id": 419,
                       "name": "RoleAssigned",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 335,
+                      "referencedDeclaration": 363,
                       "src": "777:12:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_enum$_Role_$419_$returns$__$",
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_enum$_Role_$447_$returns$__$",
                         "typeString": "function (address,enum RolesStorage.Role)"
                       }
                     },
-                    "id": 394,
+                    "id": 422,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4315,24 +4315,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 395,
+                  "id": 423,
                   "nodeType": "EmitStatement",
                   "src": "772:32:2"
                 }
               ]
             },
             "functionSelector": "630a195b",
-            "id": 397,
+            "id": 425,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 382,
+                "id": 410,
                 "modifierName": {
-                  "id": 381,
+                  "id": 409,
                   "name": "onlyAdmin",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 352,
+                  "referencedDeclaration": 380,
                   "src": "705:9:2"
                 },
                 "nodeType": "ModifierInvocation",
@@ -4342,16 +4342,16 @@
             "name": "assignRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 380,
+              "id": 408,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 376,
+                  "id": 404,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 397,
+                  "scope": 425,
                   "src": "640:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4360,7 +4360,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 375,
+                    "id": 403,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "640:7:2",
@@ -4374,32 +4374,32 @@
                 },
                 {
                   "constant": false,
-                  "id": 379,
+                  "id": 407,
                   "mutability": "mutable",
                   "name": "role",
                   "nodeType": "VariableDeclaration",
-                  "scope": 397,
+                  "scope": 425,
                   "src": "666:22:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Role_$419",
+                    "typeIdentifier": "t_enum$_Role_$447",
                     "typeString": "enum RolesStorage.Role"
                   },
                   "typeName": {
-                    "id": 378,
+                    "id": 406,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 377,
+                      "id": 405,
                       "name": "RolesStorage.Role",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 419,
+                      "referencedDeclaration": 447,
                       "src": "666:17:2"
                     },
-                    "referencedDeclaration": 419,
+                    "referencedDeclaration": 447,
                     "src": "666:17:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Role_$419",
+                      "typeIdentifier": "t_enum$_Role_$447",
                       "typeString": "enum RolesStorage.Role"
                     }
                   },
@@ -4409,12 +4409,12 @@
               "src": "629:66:2"
             },
             "returnParameters": {
-              "id": 383,
+              "id": 411,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "715:0:2"
             },
-            "scope": 412,
+            "scope": 440,
             "src": "610:202:2",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -4422,7 +4422,7 @@
           },
           {
             "body": {
-              "id": 410,
+              "id": 438,
               "nodeType": "Block",
               "src": "912:55:2",
               "statements": [
@@ -4430,11 +4430,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 407,
+                        "id": 435,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 399,
+                        "referencedDeclaration": 427,
                         "src": "951:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4450,32 +4450,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 405,
+                        "id": 433,
                         "name": "rolesStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 328,
+                        "referencedDeclaration": 356,
                         "src": "930:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RolesStorage_$661",
+                          "typeIdentifier": "t_contract$_RolesStorage_$689",
                           "typeString": "contract RolesStorage"
                         }
                       },
-                      "id": 406,
+                      "id": 434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 462,
+                      "referencedDeclaration": 490,
                       "src": "930:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$419_$",
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_enum$_Role_$447_$",
                         "typeString": "function (address) view external returns (enum RolesStorage.Role)"
                       }
                     },
-                    "id": 408,
+                    "id": 436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4486,35 +4486,35 @@
                     "src": "930:29:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Role_$419",
+                      "typeIdentifier": "t_enum$_Role_$447",
                       "typeString": "enum RolesStorage.Role"
                     }
                   },
-                  "functionReturnParameters": 404,
-                  "id": 409,
+                  "functionReturnParameters": 432,
+                  "id": 437,
                   "nodeType": "Return",
                   "src": "923:36:2"
                 }
               ]
             },
             "functionSelector": "44276733",
-            "id": 411,
+            "id": 439,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRole",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 400,
+              "id": 428,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 399,
+                  "id": 427,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 411,
+                  "scope": 439,
                   "src": "847:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4523,7 +4523,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 398,
+                    "id": 426,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "847:7:2",
@@ -4539,37 +4539,37 @@
               "src": "836:33:2"
             },
             "returnParameters": {
-              "id": 404,
+              "id": 432,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 403,
+                  "id": 431,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 411,
+                  "scope": 439,
                   "src": "893:17:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Role_$419",
+                    "typeIdentifier": "t_enum$_Role_$447",
                     "typeString": "enum RolesStorage.Role"
                   },
                   "typeName": {
-                    "id": 402,
+                    "id": 430,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 401,
+                      "id": 429,
                       "name": "RolesStorage.Role",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 419,
+                      "referencedDeclaration": 447,
                       "src": "893:17:2"
                     },
-                    "referencedDeclaration": 419,
+                    "referencedDeclaration": 447,
                     "src": "893:17:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Role_$419",
+                      "typeIdentifier": "t_enum$_Role_$447",
                       "typeString": "enum RolesStorage.Role"
                     }
                   },
@@ -4578,14 +4578,14 @@
               ],
               "src": "892:19:2"
             },
-            "scope": 412,
+            "scope": 440,
             "src": "820:147:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 413,
+        "scope": 441,
         "src": "92:878:2"
       }
     ],
@@ -4599,12 +4599,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x7E7fD898344cD5662200729748650291F013dF30",
-      "transactionHash": "0xfb0b423dd5799f527edc0933cdaac017400e541c4f12985c84a8bcc2f79f7ecf"
+      "address": "0x2a9FDC324bA6603AdF9378C2580820FabcB7875c",
+      "transactionHash": "0xd0ecffffcecffac073110fa9c5578bec2636fdceedad13cbc884cf7988214844"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-03-29T03:36:09.264Z",
+  "updatedAt": "2025-04-05T11:55:05.650Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

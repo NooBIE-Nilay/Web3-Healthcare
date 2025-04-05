@@ -41,7 +41,7 @@ contract DataAuthorization {
             "Data can be requested by doctors or admins only"
         );
         require(
-            requester == patient,
+            requester != patient,
             "Requester and patient should be different!"
         );
 
