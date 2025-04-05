@@ -34,6 +34,17 @@ contract DataAuthorization {
         address requester,
         address patient
     ) external onlyDoctorOrAdmin {
+        //Only Doctor/Admin
+        require(
+            rolesStorage.getRole(requester) == RolesStorage.Role.Doctor ||
+                rolesStorage.getRole(requester) == RolesStorage.Role.Admin,
+            "Data can be requested by doctors or admins only"
+        );
+        require(
+            requester == patient,
+            "Requester and patient should be different!"
+        );
+
         address[] memory arr = rolesStorage.getRequest(patient);
         bool exists = false;
 
