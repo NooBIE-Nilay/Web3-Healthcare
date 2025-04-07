@@ -27,3 +27,4 @@ dist-ssr
 
 .env
 web2/*
+server/src/build/*
