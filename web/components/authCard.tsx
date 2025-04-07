@@ -15,17 +15,19 @@ import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { SigninSchema, SignupSchema } from "@/lib/types";
-const HTTP_URL = "http://localhost";
+const HTTP_URL = "http://localhost:8080";
 export default function AuthCard({
   createAccount,
 }: {
   createAccount: boolean;
 }) {
   const router = useRouter();
-  //TODO: Change Cards to include Forms and use react useForms Hook
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [aadharNo, setAadharNo] = useState("");
+  const [emergencyNo, setEmergencyNo] = useState("");
+  const [mobileNo, setMobileNo] = useState("");
 
   async function handleSignin() {
     const parsedData = SigninSchema.safeParse({ email, password });
@@ -58,7 +60,14 @@ export default function AuthCard({
   }
 
   async function handleSignup() {
-    const parsedData = SignupSchema.safeParse({ name, email, password });
+    const parsedData = SignupSchema.safeParse({
+      name,
+      email,
+      password,
+      aadharNo,
+      mobileNo,
+      emergencyNo,
+    });
     if (!parsedData || parsedData.error) {
       alert(parsedData.error.message);
       console.log(parsedData.error);
@@ -67,6 +76,9 @@ export default function AuthCard({
     setName("");
     setEmail("");
     setPassword("");
+    setEmergencyNo("");
+    setMobileNo("");
+    setAadharNo("");
     try {
       const res = await axios.post(HTTP_URL + "/signup", {
         ...parsedData.data,
@@ -87,85 +99,122 @@ export default function AuthCard({
   }
 
   return (
-    <Tabs
-      defaultValue={createAccount ? "signup" : "signin"}
-      className="w-[400px]"
-    >
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="signin">Existing Account</TabsTrigger>
-        <TabsTrigger value="signup">Create New Account</TabsTrigger>
-      </TabsList>
-      <TabsContent value="signin">
-        <Card>
-          <CardHeader>
-            <CardTitle>Login</CardTitle>
-            <CardDescription>Login to Your Existing Account</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="password">Password</Label>
-              <Input
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button onClick={handleSignin}>Login</Button>
-          </CardFooter>
-        </Card>
-      </TabsContent>
-      <TabsContent value="signup">
-        <Card>
-          <CardHeader>
-            <CardTitle>Create New Account</CardTitle>
-            <CardDescription>
-              Fill out the form to create a new Account
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Name</Label>
-              <Input
-                id="current"
-                type="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="current">Email</Label>
-              <Input
-                id="current"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">Password</Label>
-              <Input
-                id="new"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button onClick={handleSignup}>Signup</Button>
-          </CardFooter>
-        </Card>
-      </TabsContent>
-    </Tabs>
+    <section className="backdrop-blur-xl bg-gray-900/10 dark:bg-gray-900/90 rounded-3xl px-20 ">
+      <Tabs
+        defaultValue={createAccount ? "signup" : "signin"}
+        className="w-[400px] pt-10"
+      >
+        <TabsList className="grid w-full grid-cols-2 ">
+          <TabsTrigger value="signin">Existing Account</TabsTrigger>
+          <TabsTrigger value="signup">Create New Account</TabsTrigger>
+        </TabsList>
+        <TabsContent value="signin">
+          <Card className="mb-20">
+            <CardHeader>
+              <CardTitle>Login</CardTitle>
+              <CardDescription>Login to Your Existing Account</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <div className="space-y-1">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  className="mt-2"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  className="mt-2"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+            </CardContent>
+            <CardFooter className="flex justify-center items-center">
+              <Button onClick={handleSignin}>Login</Button>
+            </CardFooter>
+          </Card>
+        </TabsContent>
+        <TabsContent value="signup">
+          <Card className="mb-10">
+            <CardHeader>
+              <CardTitle>Create New Account</CardTitle>
+              <CardDescription>
+                Fill out the form to create a new Account
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-5">
+              <div className="space-y-1">
+                <Label htmlFor="name">Name</Label>
+                <Input
+                  className="mt-2"
+                  id="name"
+                  type="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  className="mt-2"
+                  id="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="pass">Password</Label>
+                <Input
+                  className="mt-2"
+                  id="pass"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div>
+                <Label htmlFor="aadhar">Aadhar No</Label>
+                <Input
+                  className="mt-2"
+                  id="aadhar"
+                  type="number"
+                  value={aadharNo}
+                  onChange={(e) => setAadharNo(e.target.value)}
+                />
+              </div>
+              <div>
+                <Label htmlFor="mobile">Mobile No</Label>
+                <Input
+                  className="mt-2"
+                  id="mobile"
+                  type="number"
+                  value={mobileNo}
+                  onChange={(e) => setMobileNo(e.target.value)}
+                />
+              </div>
+              <div>
+                <Label htmlFor="emergency">Emergency Contact No</Label>
+                <Input
+                  className="mt-2"
+                  id="emergency"
+                  type="number"
+                  value={emergencyNo}
+                  onChange={(e) => setEmergencyNo(e.target.value)}
+                />
+              </div>
+            </CardContent>
+            <CardFooter className="flex justify-center items-center">
+              <Button onClick={handleSignup}>Signup</Button>
+            </CardFooter>
+          </Card>
+        </TabsContent>
+      </Tabs>
+    </section>
   );
 }

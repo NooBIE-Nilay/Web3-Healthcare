@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../providers/theme-provider";
 import { ToastContainer } from "react-toastify";
+import { Navbar } from "@/components/nvabar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,10 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
           <ToastContainer />
         </ThemeProvider>

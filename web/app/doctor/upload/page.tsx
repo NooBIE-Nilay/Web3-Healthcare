@@ -10,7 +10,7 @@ const MedicalRecordUpload: React.FC = () => {
   const [patientDetails, setPatientDetails] = useState({
     patientName: "",
     patientId: "",
-    descrition: "",
+    description: "",
   });
   const [uploadStatus, setUploadStatus] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -51,28 +51,24 @@ const MedicalRecordUpload: React.FC = () => {
     });
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/upload",
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-          onUploadProgress: (progressEvent) => {
-            const percentCompleted = Math.round(
-              (progressEvent.loaded * 100) / (progressEvent.total || 1)
-            );
-            setUploadProgress(percentCompleted);
-          },
-        }
-      );
+      await axios.post("http://localhost:8080/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+        onUploadProgress: (progressEvent) => {
+          const percentCompleted = Math.round(
+            (progressEvent.loaded * 100) / (progressEvent.total || 1)
+          );
+          setUploadProgress(percentCompleted);
+        },
+      });
 
       setUploadStatus("Medical record uploaded successfully to Blockchain!");
       setFile(null);
       setPatientDetails({
         patientName: "",
         patientId: "",
-        descrition: "",
+        description: "",
       });
       setUploadProgress(0);
     } catch (error) {
@@ -84,15 +80,15 @@ const MedicalRecordUpload: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-6 max-w-3xl ">
-      <h1 className="text-3xl font-bold mb-6 text-emerald-300">
+    <div className="container mx-auto p-6 max-w-3xl pt-24 ">
+      <h1 className="text-3xl mb-4 font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
         Upload Patient Medical Record
       </h1>
 
       <div className=" bg-gray-900 shadow-md rounded-lg p-6">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <h2 className="text-xl font-semibold mb-4 text-emerald-400">
+            <h2 className="text-xl mb-2 font-bold bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
               Patient Information
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -109,7 +105,7 @@ const MedicalRecordUpload: React.FC = () => {
                   name="patientName"
                   value={patientDetails.patientName}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-0"
                   required
                 />
               </div>
@@ -123,7 +119,7 @@ const MedicalRecordUpload: React.FC = () => {
                   name="patientId"
                   value={patientDetails.patientId}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-0"
                   required
                 />
               </div>
@@ -131,7 +127,7 @@ const MedicalRecordUpload: React.FC = () => {
           </div>
 
           <div className="mb-6">
-            <h2 className="text-xl font-semibold mb-4 text-emerald-400">
+            <h2 className="text-xl mb-2 mt-8 font-bold bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
               Medical Details
             </h2>
 
@@ -141,17 +137,17 @@ const MedicalRecordUpload: React.FC = () => {
               </label>
               <textarea
                 id="notes"
-                name="notes"
-                value={patientDetails.descrition}
+                name="description"
+                value={patientDetails.description}
                 onChange={handleInputChange}
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-0"
               />
             </div>
           </div>
 
           <div className="mb-6 ">
-            <h2 className="text-xl font-semibold mb-4 text-emerald-400">
+            <h2 className="text-xl mb-4 font-semibold bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
               Medical Record Upload
             </h2>
 
@@ -180,7 +176,7 @@ const MedicalRecordUpload: React.FC = () => {
               </h3>
               <div className="w-full bg-gray-400 rounded-full h-2.5">
                 <div
-                  className="bg-emerald-600 h-2.5 rounded-full"
+                  className=" h-2.5 bg-gradient-to-r from-blue-600 to-cyan-500  rounded-full"
                   style={{ width: `${uploadProgress}%` }}
                 ></div>
               </div>
@@ -207,7 +203,7 @@ const MedicalRecordUpload: React.FC = () => {
               className={`px-6 py-2 rounded-md text-white font-medium ${
                 isUploading
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-emerald-600 hover:bg-emerald-700"
+                  : "bg-gradient-to-r from-blue-600 to-cyan-500 "
               }`}
             >
               {isUploading ? "Uploading..." : "Upload to Blockchain"}

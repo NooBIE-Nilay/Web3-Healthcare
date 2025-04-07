@@ -79,7 +79,7 @@ model MedicalHistory {
   patientId       String
   primaryDoctorId String
   department      String
-  proirity        String          @default("2")
+  proirity        Int          @default(3)
   status          String
   diagnosis       String
   description     String?
