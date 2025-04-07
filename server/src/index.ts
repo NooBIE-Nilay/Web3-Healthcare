@@ -8,6 +8,7 @@ import axios from "axios";
 import { generateHashFromFile } from "./utils/generateHashFromFile";
 import bodyParser from "body-parser";
 import web3Router from "./web3Router";
+import testRouter from "./test";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT;
 
 app.use("/api/web3", web3Router);
+app.use("/api/web3", testRouter);
 
 app.get("/", (req, res) => {
   res.json({ msg: "Server is Online" });

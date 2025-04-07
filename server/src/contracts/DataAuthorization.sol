@@ -34,6 +34,13 @@ contract DataAuthorization {
         address requester,
         address patient
     ) external onlyDoctorOrAdmin {
+        //Only Doctor/Admin
+        require(
+            rolesStorage.getRole(requester) == RolesStorage.Role.Doctor ||
+                rolesStorage.getRole(requester) == RolesStorage.Role.Admin,
+            "Data can be requested by doctors or admins only"
+        );
+
         address[] memory arr = rolesStorage.getRequest(patient);
         bool exists = false;
 
@@ -60,7 +67,17 @@ contract DataAuthorization {
     ) external onlyPatient {
         rolesStorage.removeRequest(requester, patient);
 
-        rolesStorage.setAllowedRequest(requester, patient);
+        address[] memory arr = rolesStorage.getAllowedRequest(requester);
+        bool exists = false;
+
+        for (uint i = 0; i < arr.length; i++) {
+            if (arr[i] == requester) {
+                exists = true;
+                break;
+            }
+        }
+
+        if (!exists) rolesStorage.setAllowedRequest(requester, patient);
         emit DataAuthorized(patient, requester);
     }
 
@@ -70,6 +87,10 @@ contract DataAuthorization {
         return rolesStorage.getAllowedRequest(requester);
     }
 
-    //TODO: Another function to remove allowed request once viewed
-    //Update: Call removeAllowedRequest in that function when accessed
+    function viewedRequest(
+        address requester,
+        address patient
+    ) external onlyDoctorOrAdmin {
+        rolesStorage.removeAllowedRequest(requester, patient);
+    }
 }
